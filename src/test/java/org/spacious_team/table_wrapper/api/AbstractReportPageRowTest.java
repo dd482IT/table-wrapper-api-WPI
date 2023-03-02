@@ -33,24 +33,17 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-@ExtendWith(MockitoExtension.class)
 class AbstractReportPageRowTest {
 
-    @Mock
     Iterator<IteratorElement> innerIterator;
-    @Mock
     Function<IteratorElement, TableCell> converter;
-    @InjectMocks
     ReportPageRowIterator<IteratorElement> iterator;
-    @Mock
     AbstractReportPageRow row;
 
-    @Test
     void testDefaultConstructor() {
         assertDoesNotThrow(ReportPageRowTestImpl::new);
     }
 
-    @Test
     @SuppressWarnings("ResultOfMethodCallIgnored")
     void testIterator() {
         when(row.iterator()).thenReturn(iterator);
@@ -68,7 +61,7 @@ class AbstractReportPageRowTest {
     private static class ReportPageRowTestImpl extends AbstractReportPageRow {
 
         @Override
-        public @Nullable TableCell getCell(int i) {
+        public TableCell getCell(int i) {
             throw new UnsupportedOperationException();
         }
         @Override

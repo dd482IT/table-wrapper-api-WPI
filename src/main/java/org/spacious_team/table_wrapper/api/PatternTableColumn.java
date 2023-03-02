@@ -46,7 +46,7 @@ public class PatternTableColumn implements TableColumn {
     /**
      * Cell text should match to all regexp patterns.
      */
-    public static TableColumn of(@Nullable String... words) {
+    public static TableColumn of(String... words) {
         //noinspection ConstantConditions
         if (words == null) {
             return LEFTMOST_COLUMN;
@@ -67,8 +67,8 @@ public class PatternTableColumn implements TableColumn {
 
     public int getColumnIndex(int firstColumnForSearch, ReportPageRow... headerRows) {
         for (ReportPageRow header : headerRows) {
-            for (@Nullable TableCell cell : header) {
-                @Nullable Object value;
+            for (TableCell cell : header) {
+                Object value;
                 if (cell != null &&
                         cell.getColumnIndex() >= firstColumnForSearch &&
                         (value = cell.getValue()) != null &&

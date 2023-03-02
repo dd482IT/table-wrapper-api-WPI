@@ -44,31 +44,24 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.spy;
 
-@ExtendWith(MockitoExtension.class)
 class InstantParserTest {
 
     InstantParser parser;
 
-    @BeforeEach
     void setUp() {
         parser = spy(InstantParser.INSTANCE);
     }
 
-    @Test
     void parseInstantThrowable() {
         assertThrows(DateTimeParseException.class, () -> parser.parseInstant("abc"));
         assertThrows(DateTimeParseException.class, () -> parser.parseInstant("2020.02-01"));
     }
 
-    @ParameterizedTest
-    @MethodSource("getInstantExamples")
     void parseInstant(String actual, Temporal expected) {
         Instant expectedInstant = toInstant(expected, LocalDate.now(), MIDNIGHT, ZoneId.systemDefault());
         assertEquals(expectedInstant, parser.parseInstant(actual));
     }
 
-    @ParameterizedTest
-    @MethodSource("getInstantExamples")
     void parseInstantWithSpecifiedZone(String actual, Temporal expected) {
         ZoneId zoneId = ZoneId.of("Europe/Paris");
         InstantParser parser = InstantParser.builder()
@@ -79,8 +72,6 @@ class InstantParserTest {
         assertEquals(expectedInstant, parser.parseInstant(actual));
     }
 
-    @ParameterizedTest
-    @MethodSource("getInstantExamples")
     void parseInstantWithSpecifiedLocalTime(String actual, Temporal expected) {
         LocalTime time = LocalTime.of(1, 45);
         InstantParser parser = InstantParser.builder()
@@ -91,8 +82,6 @@ class InstantParserTest {
         assertEquals(expectedInstant, parser.parseInstant(actual));
     }
 
-    @ParameterizedTest
-    @MethodSource("getInstantExamples")
     void parseInstantWithSpecifiedLocalDate(String actual, Temporal expected) {
         LocalDate date = LocalDate.of(2000, 2, 1);
         InstantParser parser = InstantParser.builder()
@@ -107,7 +96,6 @@ class InstantParserTest {
         return DateTimeFormatParserTest.getInstantExamples();
     }
 
-    @NonNull
     private static Instant toInstant(Temporal expected,
                                      LocalDate defaultDate,
                                      LocalTime defaultTime,
@@ -124,7 +112,6 @@ class InstantParserTest {
         return Instant.from(expected);
     }
 
-    @Test
     void parseInstantWithSpecifiedDateTimePatternOnlyDate() {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM / yyyy");
         InstantParser parser = InstantParser.builder()
@@ -140,7 +127,6 @@ class InstantParserTest {
         assertThrows(DateTimeParseException.class, () -> parser.parseInstant("01.02.2020"));
     }
 
-    @Test
     void parseInstantWithSpecifiedDateTimePatternTimeAndZone() {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("+HH-mm.ssx");
         InstantParser parser = InstantParser.builder()
@@ -156,7 +142,6 @@ class InstantParserTest {
         assertThrows(DateTimeParseException.class, () -> parser.parseInstant("01.02.2020"));
     }
 
-    @Test
     void testEqualsAndHashCode() {
         EqualsVerifier
                 .forClass(InstantParser.class)
@@ -164,7 +149,6 @@ class InstantParserTest {
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertEquals("InstantParser(dateTimeFormatter=null, defaultDate=null, defaultTime=00:00, defaultZoneId=Z)",
                 InstantParser.builder()

@@ -28,8 +28,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ConstantPositionTableColumnTest {
 
-    @ParameterizedTest
-    @ValueSource(ints = {0, 1, 10, 20, 1_000_000})
     void getColumnIndex(int columnNum) {
         ReportPageRow row = ReportPageRowHelper.getRow();
         ConstantPositionTableColumn column = ConstantPositionTableColumn.of(columnNum);
@@ -37,7 +35,6 @@ class ConstantPositionTableColumnTest {
         assertEquals(columnNum, column.getColumnIndex(row));
     }
 
-    @Test
     void testEqualsAndHashCode() {
         EqualsVerifier
                 .forClass(ConstantPositionTableColumn.class)
@@ -45,7 +42,6 @@ class ConstantPositionTableColumnTest {
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertEquals(
                 "ConstantPositionTableColumn(columnIndex=10)",

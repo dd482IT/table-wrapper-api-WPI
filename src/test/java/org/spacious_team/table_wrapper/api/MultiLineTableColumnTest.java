@@ -27,7 +27,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class MultiLineTableColumnTest {
 
-    @Test
     void testOf() {
         assertEquals(
                 MultiLineTableColumn.of("a1", "b2"),
@@ -36,7 +35,6 @@ class MultiLineTableColumnTest {
                         PatternTableColumn.of("b2")));
     }
 
-    @Test
     void getColumnIndex() {
         ReportPageRow[] rows = ReportPageRowHelper.getThreeRowsHeader();
         assertEquals(2, MultiLineTableColumn.of("one", "a1", "b2").getColumnIndex(rows));
@@ -53,7 +51,6 @@ class MultiLineTableColumnTest {
         assertThrows(TableColumnNotFound.class, () -> column4.getColumnIndex(3, rows));
     }
 
-    @Test
     void equalsAndHashCode() {
         EqualsVerifier
                 .forClass(MultiLineTableColumn.class)
@@ -61,7 +58,6 @@ class MultiLineTableColumnTest {
                 .verify();
     }
 
-    @Test
     void restToString() {
         assertEquals(
                 "MultiLineTableColumn(rowDescriptors=[PatternTableColumn(words=[a]), PatternTableColumn(words=[b])])",

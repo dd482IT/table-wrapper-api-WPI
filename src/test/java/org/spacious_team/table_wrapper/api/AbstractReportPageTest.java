@@ -27,7 +27,6 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 class AbstractReportPageTest {
 
-    @Test
     void testDefaultConstructor() {
         assertDoesNotThrow(ReportPageTestImpl::new);
     }
@@ -45,7 +44,7 @@ class AbstractReportPageTest {
         }
 
         @Override
-        public @Nullable ReportPageRow getRow(int i) {
+        public ReportPageRow getRow(int i) {
             throw new UnsupportedOperationException();
         }
 

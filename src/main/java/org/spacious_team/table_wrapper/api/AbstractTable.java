@@ -114,7 +114,7 @@ public abstract class AbstractTable<R extends ReportPageRow> implements Table {
         Map<TableColumn, Integer> columnIndices = new HashMap<>();
         ReportPageRow[] headerRows = new ReportPageRow[headersRowCount];
         for (int i = 0; i < headersRowCount; i++) {
-            @Nullable ReportPageRow row = reportPage.getRow(tableRange.getFirstRow() + 1 + i);
+            ReportPageRow row = reportPage.getRow(tableRange.getFirstRow() + 1 + i);
             @SuppressWarnings({"nullness"})
             ReportPageRow notNullRow = requireNonNull(row, "Header row is absent");
             headerRows[i] = notNullRow;
@@ -140,29 +140,29 @@ public abstract class AbstractTable<R extends ReportPageRow> implements Table {
                 .mapToInt(i -> i);
     }
 
-    public <T> List<T> getData(Object report, Function<TableRow, @Nullable T> rowExtractor) {
+    public <T> List<T> getData(Object report, Function<TableRow, T> rowExtractor) {
         return getDataCollection(report, (row, data) -> {
-            @Nullable T result = rowExtractor.apply(row);
+            T result = rowExtractor.apply(row);
             if (result != null) {
                 data.add(result);
             }
         });
     }
 
-    public <T> List<T> getDataCollection(Object report, Function<TableRow, @Nullable Collection<T>> rowExtractor) {
+    public <T> List<T> getDataCollection(Object report, Function<TableRow, Collection<T>> rowExtractor) {
         return getDataCollection(report, (row, data) -> {
-            @Nullable Collection<T> result = rowExtractor.apply(row);
+            Collection<T> result = rowExtractor.apply(row);
             if (result != null) {
                 data.addAll(result);
             }
         });
     }
 
-    public <T> List<T> getDataCollection(Object report, Function<TableRow, @Nullable Collection<T>> rowExtractor,
+    public <T> List<T> getDataCollection(Object report, Function<TableRow, Collection<T>> rowExtractor,
                                          BiPredicate<T, T> equalityChecker,
-                                         BiFunction<T, T, @Nullable Collection<T>> mergeDuplicates) {
+                                         BiFunction<T, T, Collection<T>> mergeDuplicates) {
         return getDataCollection(report, (row, data) -> {
-            @Nullable Collection<T> result = rowExtractor.apply(row);
+            Collection<T> result = rowExtractor.apply(row);
             if (result != null) {
                 for (T r : result) {
                     addWithEqualityChecker(r, data, equalityChecker, mergeDuplicates);
@@ -173,7 +173,7 @@ public abstract class AbstractTable<R extends ReportPageRow> implements Table {
 
     private <T> List<T> getDataCollection(Object report, BiConsumer<TableRow, Collection<T>> rowHandler) {
         List<T> data = new ArrayList<>();
-        for (@Nullable TableRow row : this) {
+        for (TableRow row : this) {
             if (row != null) {
                 try {
                     rowHandler.accept(row, data);
@@ -189,8 +189,8 @@ public abstract class AbstractTable<R extends ReportPageRow> implements Table {
     public static <T> void addWithEqualityChecker(T element,
                                                   Collection<T> collection,
                                                   BiPredicate<T, T> equalityChecker,
-                                                  BiFunction<T, T, @Nullable Collection<T>> duplicatesMerger) {
-        @Nullable T equalsObject = null;
+                                                  BiFunction<T, T, Collection<T>> duplicatesMerger) {
+        T equalsObject = null;
         for (T e : collection) {
             if (equalityChecker.test(e, element)) {
                 equalsObject = e;
@@ -199,7 +199,7 @@ public abstract class AbstractTable<R extends ReportPageRow> implements Table {
         }
         if (equalsObject != null) {
             collection.remove(equalsObject);
-            @Nullable Collection<T> mergedCollection = duplicatesMerger.apply(equalsObject, element);
+            Collection<T> mergedCollection = duplicatesMerger.apply(equalsObject, element);
             if (mergedCollection != null) {
                 collection.addAll(mergedCollection);
             }
@@ -214,7 +214,7 @@ public abstract class AbstractTable<R extends ReportPageRow> implements Table {
      * Call {@link TableRow#clone()} if you want to use row object outside stream() block.
      */
     @Override
-    public Stream<@Nullable TableRow> stream() {
+    public Stream<TableRow> stream() {
         return StreamSupport.stream(spliterator(), false);
     }
 
@@ -250,7 +250,7 @@ public abstract class AbstractTable<R extends ReportPageRow> implements Table {
                 throw new NoSuchElementException();
             }
             int rowNum = tableRange.getFirstRow() + (i++);
-            @Nullable R row = getRow(rowNum);
+            R row = getRow(rowNum);
             if (row == null) {
                 return new EmptyTableRow(AbstractTable.this, rowNum);
             }
@@ -260,23 +260,23 @@ public abstract class AbstractTable<R extends ReportPageRow> implements Table {
     }
 
     @Override
-    public @Nullable R getRow(int i) {
+    public R getRow(int i) {
         return reportPage.getRow(i);
     }
 
     @Override
-    public @Nullable TableRow findRow(Object value) {
+    public TableRow findRow(Object value) {
         TableCellAddress address = reportPage.find(value);
         return getMutableTableRow(address);
     }
 
     @Override
-    public @Nullable TableRow findRowByPrefix(String prefix) {
+    public TableRow findRowByPrefix(String prefix) {
         TableCellAddress address = reportPage.findByPrefix(prefix);
         return getMutableTableRow(address);
     }
 
-    private @Nullable MutableTableRow<R> getMutableTableRow(TableCellAddress address) {
+    private MutableTableRow<R> getMutableTableRow(TableCellAddress address) {
         if (tableRange.contains(address)) {
             MutableTableRow<R> tableRow = new MutableTableRow<>(this, getCellDataAccessObject());
             @SuppressWarnings({"nullness", "ConstantConditions"})

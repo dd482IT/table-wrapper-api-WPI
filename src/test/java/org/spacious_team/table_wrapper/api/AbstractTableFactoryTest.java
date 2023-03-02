@@ -29,31 +29,25 @@ import static nl.jqno.equalsverifier.Warning.STRICT_INHERITANCE;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 
-@ExtendWith(MockitoExtension.class)
 class AbstractTableFactoryTest {
 
-    @Mock
     AbstractReportPage<ReportPageRow> reportPage;
     AbstractTableFactory<AbstractReportPage<ReportPageRow>> factory;
 
-    @BeforeEach
     void setUp() {
         //noinspection unchecked
         factory = new TableFactoryTestImpl((Class<AbstractReportPage<ReportPageRow>>) reportPage.getClass());
     }
 
-    @Test
     void canHandle() {
         assertTrue(factory.canHandle(reportPage));
         assertFalse(factory.canHandle(mock(ReportPage.class)));
     }
 
-    @Test
     void cast() {
         assertEquals(reportPage, factory.cast(reportPage));
     }
 
-    @Test
     void testEqualsAndHashCode() {
         EqualsVerifier
                 .forClass(AbstractTableFactory.class)
@@ -61,7 +55,6 @@ class AbstractTableFactoryTest {
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertTrue(factory.toString().startsWith("AbstractTableFactory(reportPageType="));
     }

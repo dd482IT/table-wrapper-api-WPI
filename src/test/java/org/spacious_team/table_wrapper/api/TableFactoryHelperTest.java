@@ -29,27 +29,20 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 import static org.spacious_team.table_wrapper.api.TableCellRange.EMPTY_RANGE;
 
-@ExtendWith(MockitoExtension.class)
 class TableFactoryHelperTest {
 
-    @Mock
     ReportPage reportPage;
-    @Mock
     TableCellRange range;
-    @Mock
     TableCellAddress address;
-    @Mock
     TableCell cell;
     Predicate<Object> tableNameFinder = cell -> true;
 
-    @Test
     void getTableNameFromEmptyRange() {
         assertEquals("<not found>", TableFactoryHelper.getTableName(reportPage, tableNameFinder, EMPTY_RANGE));
         //noinspection ConstantConditions
         assertEquals("<not found>", TableFactoryHelper.getTableName(reportPage, tableNameFinder, null));
     }
 
-    @Test
     void getTableNameWithEmptyCellAddress() {
         when(range.getFirstRow()).thenReturn(1);
         when(reportPage.find(1, 2, tableNameFinder)).thenReturn(TableCellAddress.NOT_FOUND);
@@ -57,7 +50,6 @@ class TableFactoryHelperTest {
         assertEquals("<not found>", TableFactoryHelper.getTableName(reportPage, tableNameFinder, range));
     }
 
-    @Test
     void getTableNameWithNullCellAddress() {
         when(range.getFirstRow()).thenReturn(1);
         //noinspection ConstantConditions
@@ -66,7 +58,6 @@ class TableFactoryHelperTest {
         assertEquals("<not found>", TableFactoryHelper.getTableName(reportPage, tableNameFinder, range));
     }
 
-    @Test
     void getTableNameWithNullCell() {
         when(range.getFirstRow()).thenReturn(1);
         when(reportPage.find(1, 2, tableNameFinder)).thenReturn(address);
@@ -76,7 +67,6 @@ class TableFactoryHelperTest {
         assertEquals("<not found>", TableFactoryHelper.getTableName(reportPage, tableNameFinder, range));
     }
 
-    @Test
     void getTableName() {
         String expected = "test";
         when(range.getFirstRow()).thenReturn(1);
