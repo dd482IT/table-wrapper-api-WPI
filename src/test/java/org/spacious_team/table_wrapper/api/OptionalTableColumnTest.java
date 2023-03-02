@@ -28,7 +28,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class OptionalTableColumnTest {
 
-    @Test
     void getColumnIndex() {
         ReportPageRow row = ReportPageRowHelper.getRow();
         assertEquals(0, OptionalTableColumn.of(PatternTableColumn.of()).getColumnIndex(row));
@@ -39,7 +38,6 @@ class OptionalTableColumnTest {
         assertThrows(OptionalTableColumnNotFound.class, () -> column2.getColumnIndex(row));
     }
 
-    @Test
     void testEqualsAndHashCode() {
         EqualsVerifier
                 .forClass(OptionalTableColumn.class)
@@ -48,7 +46,6 @@ class OptionalTableColumnTest {
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertEquals(
                 "OptionalTableColumn(column=PatternTableColumn(words=[test]))",

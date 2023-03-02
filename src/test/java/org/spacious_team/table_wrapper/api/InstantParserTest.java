@@ -54,7 +54,6 @@ class InstantParserTest {
         parser = spy(InstantParser.INSTANCE);
     }
 
-    @Test
     void parseInstantThrowable() {
         assertThrows(DateTimeParseException.class, () -> parser.parseInstant("abc"));
         assertThrows(DateTimeParseException.class, () -> parser.parseInstant("2020.02-01"));
@@ -107,7 +106,6 @@ class InstantParserTest {
         return DateTimeFormatParserTest.getInstantExamples();
     }
 
-    @NonNull
     private static Instant toInstant(Temporal expected,
                                      LocalDate defaultDate,
                                      LocalTime defaultTime,
@@ -124,7 +122,6 @@ class InstantParserTest {
         return Instant.from(expected);
     }
 
-    @Test
     void parseInstantWithSpecifiedDateTimePatternOnlyDate() {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM / yyyy");
         InstantParser parser = InstantParser.builder()
@@ -140,7 +137,6 @@ class InstantParserTest {
         assertThrows(DateTimeParseException.class, () -> parser.parseInstant("01.02.2020"));
     }
 
-    @Test
     void parseInstantWithSpecifiedDateTimePatternTimeAndZone() {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("+HH-mm.ssx");
         InstantParser parser = InstantParser.builder()
@@ -156,7 +152,6 @@ class InstantParserTest {
         assertThrows(DateTimeParseException.class, () -> parser.parseInstant("01.02.2020"));
     }
 
-    @Test
     void testEqualsAndHashCode() {
         EqualsVerifier
                 .forClass(InstantParser.class)
@@ -164,7 +159,6 @@ class InstantParserTest {
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertEquals("InstantParser(dateTimeFormatter=null, defaultDate=null, defaultTime=00:00, defaultZoneId=Z)",
                 InstantParser.builder()

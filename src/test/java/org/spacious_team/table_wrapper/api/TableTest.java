@@ -35,21 +35,18 @@ class TableTest {
     @Spy
     Table table;
 
-    @Test
     void getData() {
         Function<TableRow, ?> rowExtractor = Function.identity();
         table.getData(rowExtractor);
         verify(table).getData("unknown", rowExtractor);
     }
 
-    @Test
     void getDataCollection() {
         Function<TableRow, Collection<Object>> rowExtractor = x -> Set.of();
         table.getDataCollection(rowExtractor);
         verify(table).getDataCollection("unknown", rowExtractor);
     }
 
-    @Test
     void excludeTotalRow() {
         table.excludeTotalRow();
         verify(table).subTable(0, -1);

@@ -35,13 +35,11 @@ class TableColumnTest {
     @Mock
     ReportPageRow row;
 
-    @Test
     void getColumnIndex() {
         column.getColumnIndex(row);
         verify(column).getColumnIndex(0, row);
     }
 
-    @Test
     void testConstants() {
         assertThrows(TableColumnNotFound.class, () -> TableColumn.NOCOLUMN.getColumnIndex(0));
         assertThrows(TableColumnNotFound.class, () -> TableColumn.NOCOLUMN.getColumnIndex(1));

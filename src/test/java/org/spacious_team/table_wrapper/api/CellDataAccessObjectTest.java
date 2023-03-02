@@ -56,14 +56,12 @@ class CellDataAccessObjectTest {
         lenient().when(dao.getCell(row, NOT_EXISTS_CELL_INDEX)).thenReturn(null);
     }
 
-    @Test
     void getIntValue() {
         Object cell = "10";
         dao.getIntValue(cell);
         verify(dao).getLongValue(cell);
     }
 
-    @Test
     @SuppressWarnings("ConstantConditions")
     void getLongValueException() {
         assertThrows(NullPointerException.class, () -> dao.getLongValue(null));
@@ -93,7 +91,6 @@ class CellDataAccessObjectTest {
         };
     }
 
-    @Test
     @SuppressWarnings("ConstantConditions")
     void getDoubleValueException() {
         assertThrows(NullPointerException.class, () -> dao.getDoubleValue(null));
@@ -127,7 +124,6 @@ class CellDataAccessObjectTest {
         };
     }
 
-    @Test
     @SuppressWarnings({"ConstantConditions"})
     void getBigDecimalValueSpecialCases() {
         assertThrows(NullPointerException.class, () -> dao.getDoubleValue(null));
@@ -169,7 +165,6 @@ class CellDataAccessObjectTest {
         };
     }
 
-    @Test
     void getStringValue() {
         //noinspection ConstantConditions
         assertThrows(NullPointerException.class, () -> dao.getStringValue(null));
@@ -177,7 +172,6 @@ class CellDataAccessObjectTest {
         assertEquals("12", dao.getStringValue(12));
     }
 
-    @Test
     void getLocalDateTimeValue() {
         LocalDateTime expected = LocalDateTime.of(2000, 1, 2, 3, 4, 5);
         Instant instant = expected
@@ -187,7 +181,6 @@ class CellDataAccessObjectTest {
         assertEquals(expected, dao.getLocalDateTimeValue(instant));
     }
 
-    @Test
     void getLocalDateTimeValueAtTimeZone() {
         int zoneOffset = 3;
         Instant instant = LocalDateTime.of(2000, 1, 2, zoneOffset, 4, 5)
@@ -198,13 +191,11 @@ class CellDataAccessObjectTest {
         assertEquals(expectedAtUtc, dao.getLocalDateTimeValue(instant, ZoneOffset.UTC));
     }
 
-    @Test
     void getValueNull() {
         assertNull(dao.getValue(row, NOT_EXISTS_CELL_INDEX));
         verify(dao, never()).getValue(any());
     }
 
-    @Test
     void getValue() {
         dao.getValue(row, EXISTS_CELL_INDEX);
 
@@ -212,7 +203,6 @@ class CellDataAccessObjectTest {
         verify(dao).getValue(cell);
     }
 
-    @Test
     void testGetIntValue() {
         doReturn(10).when(dao).getIntValue(cell);
 
@@ -222,7 +212,6 @@ class CellDataAccessObjectTest {
         assertThrows(NullPointerException.class, () -> dao.getIntValue(row, NOT_EXISTS_CELL_INDEX));
     }
 
-    @Test
     void testGetLongValue() {
         doReturn(10L).when(dao).getLongValue(cell);
 
@@ -232,7 +221,6 @@ class CellDataAccessObjectTest {
         assertThrows(NullPointerException.class, () -> dao.getLongValue(row, NOT_EXISTS_CELL_INDEX));
     }
 
-    @Test
     void testGetDoubleValue() {
         doReturn(10.0).when(dao).getDoubleValue(cell);
 
@@ -242,7 +230,6 @@ class CellDataAccessObjectTest {
         assertThrows(NullPointerException.class, () -> dao.getDoubleValue(row, NOT_EXISTS_CELL_INDEX));
     }
 
-    @Test
     void testGetBigDecimalValue() {
         doReturn(null).when(dao).getBigDecimalValue(cell);
 
@@ -252,7 +239,6 @@ class CellDataAccessObjectTest {
         assertThrows(NullPointerException.class, () -> dao.getBigDecimalValue(row, NOT_EXISTS_CELL_INDEX));
     }
 
-    @Test
     void testGetStringValue() {
         doReturn(null).when(dao).getStringValue(cell);
 
@@ -262,7 +248,6 @@ class CellDataAccessObjectTest {
         assertThrows(NullPointerException.class, () -> dao.getStringValue(row, NOT_EXISTS_CELL_INDEX));
     }
 
-    @Test
     void getInstantValue() {
         doReturn(null).when(dao).getInstantValue(cell);
 
@@ -272,7 +257,6 @@ class CellDataAccessObjectTest {
         assertThrows(NullPointerException.class, () -> dao.getInstantValue(row, NOT_EXISTS_CELL_INDEX));
     }
 
-    @Test
     void testGetLocalDateTimeValue() {
         doReturn(null).when(dao).getLocalDateTimeValue(cell);
 
@@ -282,7 +266,6 @@ class CellDataAccessObjectTest {
         assertThrows(NullPointerException.class, () -> dao.getLocalDateTimeValue(row, NOT_EXISTS_CELL_INDEX));
     }
 
-    @Test
     void testGetLocalDateTimeValueAtTimeZone() {
         doReturn(null).when(dao).getLocalDateTimeValue(cell, ZoneOffset.UTC);
 

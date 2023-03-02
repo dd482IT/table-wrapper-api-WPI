@@ -36,7 +36,7 @@ public class EmptyTableCell implements TableCell {
     private final int columnIndex;
 
     @Override
-    public @Nullable Object getValue() {
+    public Object getValue() {
         return null;
     }
 

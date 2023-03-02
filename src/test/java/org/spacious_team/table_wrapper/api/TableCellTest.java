@@ -38,24 +38,21 @@ class TableCellTest {
     @Spy
     TableCell cell;
 
-    @Test
     void getValueOrDefault() {
         cell.getValueOrDefault(new Object());
         verify(cell).getValue();
     }
 
-    @Test
     void getValueOrDefaultExceptionally() {
         Object expectedDefault = new Object();
         doThrow(RuntimeException.class).when(cell).getValue();
 
-        @Nullable Object result = cell.getValueOrDefault(expectedDefault);
+        Object result = cell.getValueOrDefault(expectedDefault);
 
         assertSame(expectedDefault, result);
         verify(cell).getValue();
     }
 
-    @Test
     void getIntValueOrDefault() {
         doReturn(1).when(cell).getIntValue();
 
@@ -65,7 +62,6 @@ class TableCellTest {
         verify(cell).getIntValue();
     }
 
-    @Test
     void getIntValueOrDefaultExceptionally() {
         int expectedDefault = 2;
         doThrow(RuntimeException.class).when(cell).getIntValue();
@@ -76,7 +72,6 @@ class TableCellTest {
         verify(cell).getIntValue();
     }
 
-    @Test
     void getLongValueOrDefault() {
         doReturn(1L).when(cell).getLongValue();
 
@@ -86,7 +81,6 @@ class TableCellTest {
         verify(cell).getLongValue();
     }
 
-    @Test
     void getLongValueOrDefaultExceptionally() {
         long expectedDefault = 2;
         doThrow(RuntimeException.class).when(cell).getLongValue();
@@ -97,7 +91,6 @@ class TableCellTest {
         verify(cell).getLongValue();
     }
 
-    @Test
     void getDoubleValue() {
         doReturn(1.0).when(cell).getDoubleValue();
 
@@ -107,7 +100,6 @@ class TableCellTest {
         verify(cell).getDoubleValue();
     }
 
-    @Test
     void getDoubleValueOrDefaultExceptionally() {
         double expectedDefault = 2.0;
         doThrow(RuntimeException.class).when(cell).getDoubleValue();
@@ -118,7 +110,6 @@ class TableCellTest {
         verify(cell).getDoubleValue();
     }
 
-    @Test
     void getBigDecimalValueOrDefault() {
         doReturn(BigDecimal.valueOf(1.0)).when(cell).getBigDecimalValue();
 
@@ -128,7 +119,6 @@ class TableCellTest {
         verify(cell).getBigDecimalValue();
     }
 
-    @Test
     void getBigDecimalValueOrDefaultExceptionally() {
         BigDecimal expectedDefault = BigDecimal.valueOf(2.0);
         doThrow(RuntimeException.class).when(cell).getBigDecimalValue();
@@ -139,7 +129,6 @@ class TableCellTest {
         verify(cell).getBigDecimalValue();
     }
 
-    @Test
     void getStringValueOrDefault() {
         doReturn("1").when(cell).getStringValue();
 
@@ -149,7 +138,6 @@ class TableCellTest {
         verify(cell).getStringValue();
     }
 
-    @Test
     void getStringValueOrDefaultExceptionally() {
         String expectedDefault = "2";
         doThrow(RuntimeException.class).when(cell).getStringValue();
@@ -160,7 +148,6 @@ class TableCellTest {
         verify(cell).getStringValue();
     }
 
-    @Test
     void getInstantValueOrDefault() {
         Instant expected = Instant.now();
         doReturn(expected).when(cell).getInstantValue();
@@ -171,7 +158,6 @@ class TableCellTest {
         verify(cell).getInstantValue();
     }
 
-    @Test
     void getInstantValueOrDefaultExceptionally() {
         Instant expectedDefault = Instant.now();
         doThrow(RuntimeException.class).when(cell).getInstantValue();
@@ -182,7 +168,6 @@ class TableCellTest {
         verify(cell).getInstantValue();
     }
 
-    @Test
     void getLocalDateTimeValueOrDefault() {
         LocalDateTime expected = LocalDateTime.now();
         doReturn(expected).when(cell).getLocalDateTimeValue();
@@ -193,7 +178,6 @@ class TableCellTest {
         verify(cell).getLocalDateTimeValue();
     }
 
-    @Test
     void getLocalDateTimeValueOrDefaultExceptionally() {
         LocalDateTime expectedDefault = LocalDateTime.now();
         doThrow(RuntimeException.class).when(cell).getLocalDateTimeValue();

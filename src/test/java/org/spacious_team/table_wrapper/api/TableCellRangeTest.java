@@ -30,7 +30,6 @@ class TableCellRangeTest {
 
     TableCellRange range = TableCellRange.of(1, 2, 3, 4);
 
-    @Test
     void of1() {
         assertEquals(1, range.getFirstRow());
         assertEquals(2, range.getLastRow());
@@ -38,7 +37,6 @@ class TableCellRangeTest {
         assertEquals(4, range.getLastColumn());
     }
 
-    @Test
     void of2() {
         TableCellAddress upperLeft = TableCellAddress.of(1, 3);
         TableCellAddress bottomRight = TableCellAddress.of(2, 4);
@@ -49,7 +47,6 @@ class TableCellRangeTest {
         assertEquals(4, range.getLastColumn());
     }
 
-    @Test
     void contains() {
         TableCellAddress upperLeft = TableCellAddress.of(range.getFirstRow(), range.getFirstColumn());
         TableCellAddress bottomRight = TableCellAddress.of(range.getLastRow(), range.getLastColumn());
@@ -62,7 +59,6 @@ class TableCellRangeTest {
         assertFalse(range.contains(TableCellAddress.of(range.getLastRow() + 1, range.getLastColumn())));
     }
 
-    @Test
     void containsRow() {
         assertTrue(range.containsRow(range.getFirstRow()));
         assertTrue(range.containsRow(range.getLastRow()));
@@ -70,7 +66,6 @@ class TableCellRangeTest {
         assertFalse(range.containsRow(range.getLastRow() + 1));
     }
 
-    @Test
     void containsColumn() {
         assertTrue(range.containsColumn(range.getFirstColumn()));
         assertTrue(range.containsColumn(range.getLastColumn()));
@@ -78,7 +73,6 @@ class TableCellRangeTest {
         assertFalse(range.containsColumn(range.getLastColumn() + 1));
     }
 
-    @Test
     void addRowsToTop() {
         TableCellRange range = this.range.addRowsToTop(1);
         assertEquals(0, range.getFirstRow());
@@ -93,7 +87,6 @@ class TableCellRangeTest {
         assertEquals(4, range.getLastColumn());
     }
 
-    @Test
     void addRowsToBottom() {
         TableCellRange range = this.range.addRowsToBottom(1);
         assertEquals(1, range.getFirstRow());
@@ -108,7 +101,6 @@ class TableCellRangeTest {
         assertEquals(4, range.getLastColumn());
     }
 
-    @Test
     void addColumnsToLeft() {
         TableCellRange range = this.range.addColumnsToLeft(1);
         assertEquals(1, range.getFirstRow());
@@ -123,7 +115,6 @@ class TableCellRangeTest {
         assertEquals(4, range.getLastColumn());
     }
 
-    @Test
     void addColumnsToRight() {
         TableCellRange range = this.range.addColumnsToRight(1);
         assertEquals(1, range.getFirstRow());
@@ -138,7 +129,6 @@ class TableCellRangeTest {
         assertEquals(3, range.getLastColumn());
     }
 
-    @Test
     void testEmptyRange() {
         assertEquals(MIN_VALUE, EMPTY_RANGE.getFirstRow());
         assertEquals(MIN_VALUE, EMPTY_RANGE.getLastRow());
@@ -160,7 +150,6 @@ class TableCellRangeTest {
         assertSame(EMPTY_RANGE, EMPTY_RANGE.addColumnsToRight(1));
     }
 
-    @Test
     void testEqualsAndHashCode() {
         EqualsVerifier
                 .forClass(TableCellRange.class)
@@ -168,7 +157,6 @@ class TableCellRangeTest {
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertEquals(
                 "TableCellRange(firstRow=1, lastRow=2, firstColumn=3, lastColumn=4)",

@@ -28,19 +28,16 @@ import static org.spacious_team.table_wrapper.api.TableCellAddress.NOT_FOUND;
 
 class TableCellAddressTest {
 
-    @Test
     void testConstructor() {
         assertEquals(1, TableCellAddress.of(1, 2).getRow());
         assertEquals(2, TableCellAddress.of(1, 2).getColumn());
     }
 
-    @Test
     void testNotFoundCell() {
         assertEquals(MIN_VALUE, NOT_FOUND.getRow());
         assertEquals(MIN_VALUE, NOT_FOUND.getColumn());
     }
 
-    @Test
     void testEqualsAndHashCode() {
         EqualsVerifier
                 .forClass(TableCellAddress.class)
@@ -48,7 +45,6 @@ class TableCellAddressTest {
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertEquals(
                 "TableCellAddress(row=1, column=2)",

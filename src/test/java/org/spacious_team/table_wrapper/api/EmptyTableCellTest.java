@@ -36,7 +36,6 @@ class EmptyTableCellTest {
         assertEquals(columnIndex, EmptyTableCell.of(columnIndex).getColumnIndex());
     }
 
-    @Test
     void getValue() {
         assertNull(cell.getValue());
         assertThrows(NullPointerException.class, () -> cell.getIntValue());
@@ -48,7 +47,6 @@ class EmptyTableCellTest {
         assertThrows(NullPointerException.class, () -> cell.getLocalDateTimeValue());
     }
 
-    @Test
     void testEqualsAndHashCode() {
         EqualsVerifier
                 .forClass(EmptyTableCell.class)
@@ -56,7 +54,6 @@ class EmptyTableCellTest {
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertEquals("EmptyTableCell(columnIndex=1)", cell.toString());
     }

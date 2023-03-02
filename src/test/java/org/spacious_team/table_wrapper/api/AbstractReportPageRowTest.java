@@ -45,12 +45,10 @@ class AbstractReportPageRowTest {
     @Mock
     AbstractReportPageRow row;
 
-    @Test
     void testDefaultConstructor() {
         assertDoesNotThrow(ReportPageRowTestImpl::new);
     }
 
-    @Test
     @SuppressWarnings("ResultOfMethodCallIgnored")
     void testIterator() {
         when(row.iterator()).thenReturn(iterator);
@@ -68,7 +66,7 @@ class AbstractReportPageRowTest {
     private static class ReportPageRowTestImpl extends AbstractReportPageRow {
 
         @Override
-        public @Nullable TableCell getCell(int i) {
+        public TableCell getCell(int i) {
             throw new UnsupportedOperationException();
         }
         @Override

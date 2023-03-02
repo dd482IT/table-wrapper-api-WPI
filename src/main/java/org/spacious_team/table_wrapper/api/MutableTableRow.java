@@ -47,12 +47,12 @@ class MutableTableRow<T extends ReportPageRow> implements TableRow {
     private volatile T row;
 
     @Override
-    public @Nullable TableCell getCell(TableHeaderColumn column) {
+    public TableCell getCell(TableHeaderColumn column) {
         return getCell(getCellIndex(column));
     }
 
     @Override
-    public @Nullable TableCell getCell(int i) {
+    public TableCell getCell(int i) {
         return row.getCell(i);
     }
 
@@ -77,12 +77,12 @@ class MutableTableRow<T extends ReportPageRow> implements TableRow {
     }
 
     @Override
-    public Iterator<@Nullable TableCell> iterator() {
+    public Iterator<TableCell> iterator() {
         return row.iterator();
     }
 
     @Override
-    public @Nullable Object getCellValue(TableHeaderColumn column) {
+    public Object getCellValue(TableHeaderColumn column) {
         return dao.getValue(row, getCellIndex(column));
     }
 
@@ -122,7 +122,7 @@ class MutableTableRow<T extends ReportPageRow> implements TableRow {
     }
 
     private int getCellIndex(TableHeaderColumn column) {
-        @Nullable Integer cellIndex = table.getHeaderDescription()
+        Integer cellIndex = table.getHeaderDescription()
                 .get(column.getColumn());
         @SuppressWarnings("nullness")
         int cell = requireNonNull(cellIndex, "Cell is not found");

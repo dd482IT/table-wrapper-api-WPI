@@ -43,65 +43,54 @@ class AbstractTableCellTest {
         cell = new TableCellTestImpl(cellValue, dao);
     }
 
-    @Test
     void getValue() {
         cell.getValue();
         Mockito.verify(dao).getValue(cellValue);
     }
 
-    @Test
     void getIntValue() {
         cell.getIntValue();
         Mockito.verify(dao).getIntValue(cellValue);
     }
 
-    @Test
     void getLongValue() {
         cell.getLongValue();
         Mockito.verify(dao).getLongValue(cellValue);
     }
 
-    @Test
     void getDoubleValue() {
         cell.getDoubleValue();
         Mockito.verify(dao).getDoubleValue(cellValue);
     }
 
-    @Test
     void getBigDecimalValue() {
         cell.getBigDecimalValue();
         Mockito.verify(dao).getBigDecimalValue(cellValue);
     }
 
-    @Test
     void getStringValue() {
         cell.getStringValue();
         Mockito.verify(dao).getStringValue(cellValue);
     }
 
-    @Test
     void getInstantValue() {
         cell.getInstantValue();
         Mockito.verify(dao).getInstantValue(cellValue);
     }
 
-    @Test
     void getLocalDateTimeValue() {
         cell.getLocalDateTimeValue();
         Mockito.verify(dao).getLocalDateTimeValue(cellValue);
     }
 
-    @Test
     void getCell() {
         assertEquals(cellValue, cell.getCell());
     }
 
-    @Test
     void getDao() {
         assertEquals(dao, cell.getDao());
     }
 
-    @Test
     void testEqualsAndHashCode() {
         EqualsVerifier
                 .forClass(AbstractTableCell.class)
@@ -109,7 +98,6 @@ class AbstractTableCellTest {
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertEquals("AbstractTableCell(cell=cellValue, dao=dao)", cell.toString());
     }

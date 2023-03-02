@@ -57,19 +57,16 @@ class TableFactoryTest {
 
     }
 
-    @Test
     void create() {
         tableFactory.create(reportPage, tableName, lastRowString, headerDescription);
         verify(tableFactory).create(reportPage, tableName, lastRowString, headerDescription, 1);
     }
 
-    @Test
     void testCreate() {
         tableFactory.create(reportPage, tableName, headerDescription);
         verify(tableFactory).create(reportPage, tableName, headerDescription, 1);
     }
 
-    @Test
     void testCreate1() {
         when(reportPage.getTableCellRange(tableName, 2, lastRowString)).thenReturn(tableCellRange);
 
@@ -84,7 +81,6 @@ class TableFactoryTest {
                 2);
     }
 
-    @Test
     void testCreate2() {
         when(reportPage.getTableCellRange(tableName, 2)).thenReturn(tableCellRange);
 
@@ -99,21 +95,18 @@ class TableFactoryTest {
                 2);
     }
 
-    @Test
     void testCreate3() {
         when(reportPage.getTableCellRange(tableNameFinder, 1, lastRowFinder)).thenReturn(tableCellRange);
         tableFactory.create(reportPage, tableNameFinder, lastRowFinder, headerDescription);
         verify(tableFactory).create(reportPage, tableNameFinder, lastRowFinder, headerDescription, 1);
     }
 
-    @Test
     void testCreate4() {
         when(reportPage.getTableCellRange(tableNameFinder, 1)).thenReturn(tableCellRange);
         tableFactory.create(reportPage, tableNameFinder, headerDescription);
         verify(tableFactory).create(reportPage, tableNameFinder, headerDescription, 1);
     }
 
-    @Test
     void testCreate5() {
         when(reportPage.getTableCellRange(tableNameFinder, 2, lastRowFinder)).thenReturn(tableCellRange);
 
@@ -128,7 +121,6 @@ class TableFactoryTest {
                 eq(2));
     }
 
-    @Test
     void testCreate6() {
         when(reportPage.getTableCellRange(tableNameFinder, 2)).thenReturn(tableCellRange);
 
@@ -143,7 +135,6 @@ class TableFactoryTest {
                 eq(2));
     }
 
-    @Test
     void createNameless() {
         when(reportPage.getTableCellRange(firstRowString, 1, lastRowString)).thenReturn(tableCellRange);
         tableFactory.createNameless(reportPage, firstRowString, lastRowString, headerDescription);
@@ -151,7 +142,6 @@ class TableFactoryTest {
                 headerDescription, 1);
     }
 
-    @Test
     void testCreateNameless() {
         when(reportPage.getTableCellRange(firstRowString, 1)).thenReturn(tableCellRange);
         tableFactory.createNameless(reportPage, firstRowString, headerDescription);
@@ -159,7 +149,6 @@ class TableFactoryTest {
                 headerDescription, 1);
     }
 
-    @Test
     void testCreateNameless1() {
         when(reportPage.getTableCellRange(firstRowString, 2, lastRowString)).thenReturn(tableCellRange);
         when(tableCellRange.addRowsToTop(1)).thenReturn(tableCellRangeAddTop1);
@@ -177,7 +166,6 @@ class TableFactoryTest {
                 2);
     }
 
-    @Test
     void testCreateNameless2() {
         when(reportPage.getTableCellRange(firstRowString, 2)).thenReturn(tableCellRange);
         when(tableCellRange.addRowsToTop(1)).thenReturn(tableCellRangeAddTop1);
@@ -194,7 +182,6 @@ class TableFactoryTest {
                 2);
     }
 
-    @Test
     void testCreateNameless3() {
         when(reportPage.getTableCellRange(firstRowFinder, 1, lastRowFinder)).thenReturn(tableCellRange);
         tableFactory.createNameless(reportPage, firstRowFinder, lastRowFinder, headerDescription);
@@ -202,7 +189,6 @@ class TableFactoryTest {
                 headerDescription, 1);
     }
 
-    @Test
     void testCreateNameless4() {
         when(reportPage.getTableCellRange(firstRowFinder, 1)).thenReturn(tableCellRange);
         tableFactory.createNameless(reportPage, firstRowFinder, headerDescription);
@@ -210,7 +196,6 @@ class TableFactoryTest {
                 headerDescription, 1);
     }
 
-    @Test
     void testCreateNameless5() {
         when(reportPage.getTableCellRange(firstRowFinder, 2, lastRowFinder)).thenReturn(tableCellRange);
         when(tableCellRange.addRowsToTop(1)).thenReturn(tableCellRangeAddTop1);
@@ -228,7 +213,6 @@ class TableFactoryTest {
                 2);
     }
 
-    @Test
     void testCreateNameless6() {
         when(reportPage.getTableCellRange(firstRowFinder, 2)).thenReturn(tableCellRange);
         when(tableCellRange.addRowsToTop(1)).thenReturn(tableCellRangeAddTop1);

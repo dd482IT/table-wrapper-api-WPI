@@ -35,10 +35,8 @@ import static org.spacious_team.table_wrapper.api.CellDataAccessObjectHelper.*;
  */
 public interface CellDataAccessObject<C, R extends ReportPageRow> {
 
-    @Nullable
     C getCell(R row, Integer cellIndex);
 
-    @Nullable
     Object getValue(C cell);
 
     /**
@@ -52,7 +50,7 @@ public interface CellDataAccessObject<C, R extends ReportPageRow> {
      * @throws RuntimeException if method can't extract long value
      */
     default long getLongValue(C cell) {
-        @Nullable Object value = getValue(cell);
+        Object value = getValue(cell);
         if (value instanceof Number) {
             return ((Number) value).longValue();
         } else if (value != null) {
@@ -67,7 +65,7 @@ public interface CellDataAccessObject<C, R extends ReportPageRow> {
      * @throws RuntimeException if method can't extract Double value
      */
     default double getDoubleValue(C cell) {
-        @Nullable Object value = getValue(cell);
+        Object value = getValue(cell);
         if (value instanceof Number) {
             return ((Number) value).doubleValue();
         } else if (value != null) {
@@ -133,8 +131,8 @@ public interface CellDataAccessObject<C, R extends ReportPageRow> {
                 .toLocalDateTime();
     }
 
-    default @Nullable Object getValue(R row, Integer cellIndex) {
-        @Nullable C cell = getCell(row, cellIndex);
+    default Object getValue(R row, Integer cellIndex) {
+        C cell = getCell(row, cellIndex);
         return (cell == null) ? null : getValue(cell);
     }
 

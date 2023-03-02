@@ -41,7 +41,7 @@ final class DateTimeFormatParser {
     }
 
     private static Pattern getPattern(String dateTimeOffset) {
-        @Nullable Pattern pattern = null;
+        Pattern pattern = null;
         int length = dateTimeOffset.length();
         if (length == 8 || length == 12) { // without and with millis
             pattern = getForTime(dateTimeOffset, 0);

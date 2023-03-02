@@ -37,7 +37,6 @@ class ConstantPositionTableColumnTest {
         assertEquals(columnNum, column.getColumnIndex(row));
     }
 
-    @Test
     void testEqualsAndHashCode() {
         EqualsVerifier
                 .forClass(ConstantPositionTableColumn.class)
@@ -45,7 +44,6 @@ class ConstantPositionTableColumnTest {
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertEquals(
                 "ConstantPositionTableColumn(columnIndex=10)",

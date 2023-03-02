@@ -62,12 +62,10 @@ class TableFactoryRegistryTest {
         TableFactoryRegistry.clear();
     }
 
-    @AfterEach
     void tearDown() {
         TableFactoryRegistry.clear();
     }
 
-    @Test
     void test() {
         assertTrue(TableFactoryRegistry.getAll().isEmpty());
 

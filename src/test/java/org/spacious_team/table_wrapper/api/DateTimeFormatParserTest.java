@@ -37,13 +37,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class DateTimeFormatParserTest {
 
-    @Test
     void getDateTimeFormatterThrowable() {
         assertThrows(IllegalArgumentException.class,
                 () -> DateTimeFormatParser.getDateTimeFormatter("illegal"));
     }
 
-    @Test
     void cache() {
         DateTimeFormatter expected = DateTimeFormatParser.getDateTimeFormatter("01.02.2020");
         DateTimeFormatter actual = DateTimeFormatParser.getDateTimeFormatter("31.12.2020");

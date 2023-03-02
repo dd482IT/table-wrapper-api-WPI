@@ -39,7 +39,7 @@ public abstract class AbstractTableCell<T> implements TableCell {
     private final CellDataAccessObject<T, ?> dao;
 
     @Override
-    public @Nullable Object getValue() {
+    public Object getValue() {
         return dao.getValue(cell);
     }
 

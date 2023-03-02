@@ -83,8 +83,8 @@ public class InstantParser {
     /**
      * If null, date time format is derived from value
      */
-    private final @Nullable DateTimeFormatter dateTimeFormatter;
-    private final @Nullable LocalDate defaultDate;
+    private final DateTimeFormatter dateTimeFormatter;
+    private final LocalDate defaultDate;
     @Builder.Default
     private final LocalTime defaultTime = LocalTime.MIDNIGHT;
     @Builder.Default

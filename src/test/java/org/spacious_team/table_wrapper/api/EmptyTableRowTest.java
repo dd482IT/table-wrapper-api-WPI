@@ -50,17 +50,14 @@ class EmptyTableRowTest {
         assertNull(row.getCell(col));
     }
 
-    @Test
     void testGetCell() {
         assertNull(row.getCell(column));
     }
 
-    @Test
     void getFirstCellNum() {
         assertEquals(-1, row.getFirstCellNum());
     }
 
-    @Test
     void getLastCellNum() {
         assertEquals(-1, row.getLastCellNum());
     }
@@ -71,64 +68,53 @@ class EmptyTableRowTest {
         assertFalse(row.rowContains(value));
     }
 
-    @Test
     void iterator() {
         assertFalse(row.iterator().hasNext());
     }
 
-    @Test
     void getCellValue() {
         assertNull(row.getCellValue(column));
     }
 
-    @Test
     void getIntCellValue() {
         assertThrows(NullPointerException.class,
                 () -> row.getIntCellValue(column));
     }
 
-    @Test
     void getLongCellValue() {
         assertThrows(NullPointerException.class,
                 () -> row.getLongCellValue(column));
     }
 
-    @Test
     void getDoubleCellValue() {
         assertThrows(NullPointerException.class,
                 () -> row.getDoubleCellValue(column));
     }
 
-    @Test
     void getBigDecimalCellValue() {
         assertThrows(NullPointerException.class,
                 () -> row.getBigDecimalCellValue(column));
     }
 
-    @Test
     void getStringCellValue() {
         assertThrows(NullPointerException.class,
                 () -> row.getStringCellValue(column));
     }
 
-    @Test
     void getInstantCellValue() {
         assertThrows(NullPointerException.class,
                 () -> row.getInstantCellValue(column));
     }
 
-    @Test
     void getLocalDateTimeCellValue() {
         assertThrows(NullPointerException.class,
                 () -> row.getLocalDateTimeCellValue(column));
     }
 
-    @Test
     void testClone() {
         assertEquals(row, row.clone());
     }
 
-    @Test
     void testGetTable() {
         assertEquals(table, row.getTable());
     }
@@ -139,7 +125,6 @@ class EmptyTableRowTest {
         assertEquals(rowNum, new EmptyTableRow(table, rowNum).getRowNum());
     }
 
-    @Test
     void testEqualsAndHashCode() {
         EqualsVerifier
                 .forClass(EmptyTableRow.class)
@@ -147,7 +132,6 @@ class EmptyTableRowTest {
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertNotNull(row.toString());
     }
