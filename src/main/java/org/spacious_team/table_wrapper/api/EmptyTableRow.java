@@ -29,19 +29,18 @@ import java.util.Iterator;
 
 import static java.util.Collections.emptyIterator;
 
-@Data
 class EmptyTableRow implements TableRow {
     private static final String CELL_NOT_FOUND = "Cell not found";
     private final Table table;
     private final int rowNum;
 
     @Override
-    public @Nullable TableCell getCell(TableHeaderColumn column) {
+    public TableCell getCell(TableHeaderColumn column) {
         return null;
     }
 
     @Override
-    public @Nullable TableCell getCell(int i) {
+    public TableCell getCell(int i) {
         return null;
     }
 
@@ -66,7 +65,7 @@ class EmptyTableRow implements TableRow {
     }
 
     @Override
-    public @Nullable Object getCellValue(TableHeaderColumn column) {
+    public Object getCellValue(TableHeaderColumn column) {
         return null;
     }
 
@@ -106,7 +105,6 @@ class EmptyTableRow implements TableRow {
     }
 
     @Override
-    @SneakyThrows
     public TableRow clone() {
         return (TableRow) super.clone();
     }

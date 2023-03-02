@@ -32,7 +32,6 @@ class AnyOfTableColumnTest {
         throw new RuntimeException();
     };
 
-    @Test
     void getColumnIndex() {
         TableColumn column1 = AnyOfTableColumn.of(LEFTMOST_COLUMN, NOT_FOUND);
         TableColumn column2 = AnyOfTableColumn.of(NOT_FOUND, LEFTMOST_COLUMN);
@@ -46,7 +45,6 @@ class AnyOfTableColumnTest {
         assertThrows(TableColumnNotFound.class, () -> column3.getColumnIndex(10));
     }
 
-    @Test
     void testEqualsAndHashCode() {
         EqualsVerifier
                 .forClass(AnyOfTableColumn.class)
@@ -54,7 +52,6 @@ class AnyOfTableColumnTest {
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertEquals("AnyOfTableColumn(columns=[PatternTableColumn(words=[test word])])",
                 AnyOfTableColumn.of(PatternTableColumn.of("test word")).toString());

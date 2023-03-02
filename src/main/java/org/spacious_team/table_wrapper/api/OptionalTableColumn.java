@@ -24,9 +24,6 @@ import lombok.ToString;
 
 import static lombok.AccessLevel.PRIVATE;
 
-@ToString(of = "column")
-@EqualsAndHashCode(of = "column")
-@RequiredArgsConstructor(access = PRIVATE)
 public class OptionalTableColumn implements TableColumn {
     private final TableColumn column;
     private final AnyOfTableColumn anyOfTableColumn;

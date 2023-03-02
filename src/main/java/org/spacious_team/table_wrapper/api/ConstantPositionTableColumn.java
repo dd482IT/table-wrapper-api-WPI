@@ -22,9 +22,6 @@ import lombok.EqualsAndHashCode;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
-@ToString
-@EqualsAndHashCode
-@RequiredArgsConstructor(staticName = "of")
 public class ConstantPositionTableColumn implements TableColumn {
     private final int columnIndex;
 

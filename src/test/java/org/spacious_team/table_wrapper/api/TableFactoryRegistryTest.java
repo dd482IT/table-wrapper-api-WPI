@@ -30,7 +30,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.lenient;
 import static org.mockito.Mockito.mock;
 
-@ExtendWith(MockitoExtension.class)
 class TableFactoryRegistryTest {
 
     ReportPage reportPage1;
@@ -41,7 +40,6 @@ class TableFactoryRegistryTest {
     TableFactory factory2;
     TableFactory factory1Copy;
 
-    @BeforeEach
     void setUp() {
         reportPage1 = mock(ReportPage.class);
         reportPage2 = mock(ReportPage.class);
@@ -62,12 +60,10 @@ class TableFactoryRegistryTest {
         TableFactoryRegistry.clear();
     }
 
-    @AfterEach
     void tearDown() {
         TableFactoryRegistry.clear();
     }
 
-    @Test
     void test() {
         assertTrue(TableFactoryRegistry.getAll().isEmpty());
 

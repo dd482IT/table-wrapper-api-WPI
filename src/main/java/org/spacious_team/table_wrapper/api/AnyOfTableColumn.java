@@ -26,9 +26,6 @@ import java.util.Arrays;
 
 import static lombok.AccessLevel.PRIVATE;
 
-@ToString
-@EqualsAndHashCode
-@RequiredArgsConstructor(access = PRIVATE)
 public class AnyOfTableColumn implements TableColumn {
 
     private final TableColumn[] columns;

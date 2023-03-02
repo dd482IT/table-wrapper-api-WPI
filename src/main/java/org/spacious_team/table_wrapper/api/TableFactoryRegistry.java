@@ -28,7 +28,6 @@ import java.util.concurrent.CopyOnWriteArraySet;
 import static java.util.Collections.unmodifiableSet;
 import static lombok.AccessLevel.PRIVATE;
 
-@RequiredArgsConstructor(access = PRIVATE)
 public final class TableFactoryRegistry {
 
     private static final Set<TableFactory> factories = new CopyOnWriteArraySet<>();

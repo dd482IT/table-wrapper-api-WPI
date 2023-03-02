@@ -36,9 +36,6 @@ import static lombok.AccessLevel.PRIVATE;
  * <pre/>
  * Can find index for (Two -> a3 -> b1) column
  */
-@ToString
-@EqualsAndHashCode
-@RequiredArgsConstructor(access = PRIVATE)
 public class MultiLineTableColumn implements TableColumn {
     private final TableColumn[] rowDescriptors;
 

@@ -25,10 +25,6 @@ import lombok.ToString;
 
 import static java.lang.Integer.MIN_VALUE;
 
-@Getter
-@ToString
-@EqualsAndHashCode
-@RequiredArgsConstructor(staticName = "of")
 public class TableCellAddress {
     public static final TableCellAddress NOT_FOUND = new TableCellAddress(MIN_VALUE, MIN_VALUE);
 

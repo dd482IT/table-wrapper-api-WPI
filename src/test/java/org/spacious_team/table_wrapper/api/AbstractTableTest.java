@@ -47,24 +47,18 @@ import static org.mockito.Mockito.*;
 import static org.spacious_team.table_wrapper.api.TableColumn.LEFTMOST_COLUMN;
 import static org.spacious_team.table_wrapper.api.TableColumn.NOCOLUMN;
 
-@ExtendWith(MockitoExtension.class)
 class AbstractTableTest {
 
-    @Mock
     AbstractReportPage<EmptyTableRow> report;
-    @Mock
     TableCellRange tableRange;
     Class<Columns> headerDescription = Columns.class;
-    @Mock
     CellDataAccessObject<?, EmptyTableRow> dao;
     AbstractTable<EmptyTableRow> table;
 
-    @BeforeEach
     void beforeEach() {
         table = spy(new TableTestImpl(report, "table name", tableRange, headerDescription, 1));
     }
 
-    @Test
     void testEmptyRangeConstructor() {
         AbstractTable<EmptyTableRow> table = getEmptyTable();
 
@@ -82,7 +76,6 @@ class AbstractTableTest {
         return new TableTestImpl(report, "table name", tableRange, headerDescription, 1);
     }
 
-    @Test
     void testNotEmptyRangeConstructor() {
         AbstractTable<EmptyTableRow> table = getNotEmptyTable();
         TableCellRange range = TableCellRange.of(2, 6, 0, 1);
@@ -112,7 +105,6 @@ class AbstractTableTest {
         return new TableTestImpl(report, "table name", tableRange, headerDescription, 2);
     }
 
-    @Test
     void testNotEmptyRangeConstructor2() {
         AbstractTable<EmptyTableRow> originalTable = getNotEmptyTable();
         AbstractTable<EmptyTableRow> table = new TableTestImpl(originalTable, -1, -1);
@@ -124,7 +116,6 @@ class AbstractTableTest {
         assertTrue(table.isEmpty());
     }
 
-    @Test
     void testEmptyRangeConstructor2() {
         AbstractTable<EmptyTableRow> originalTable = getEmptyTable();
         AbstractTable<EmptyTableRow> table = new TableTestImpl(originalTable, 1, 2);
@@ -137,7 +128,6 @@ class AbstractTableTest {
         assertFalse(table.isEmpty());
     }
 
-    @Test
     void getData() {
         TableRow sourceRow = mock(TableRow.class);
         EmptyTableRow resultRow = mock(EmptyTableRow.class);
@@ -153,7 +143,6 @@ class AbstractTableTest {
         verify(extractor).apply(sourceRow);
     }
 
-    @Test
     void getDataWithException() {
         TableRow sourceRow = mock(TableRow.class);
         Iterator<TableRow> iterator = Arrays.asList(sourceRow, null).iterator();
@@ -167,7 +156,6 @@ class AbstractTableTest {
         assertEquals(emptyList(), result);
     }
 
-    @Test
     void getDataCollection() {
         TableRow sourceRow = mock(TableRow.class);
         EmptyTableRow resultRow = mock(EmptyTableRow.class);
@@ -183,7 +171,6 @@ class AbstractTableTest {
         verify(rowExtractor).apply(sourceRow);
     }
 
-    @Test
     @SuppressWarnings("unchecked")
     void testGetDataCollection() {
         TableRow sourceRow = mock(TableRow.class);
@@ -209,7 +196,6 @@ class AbstractTableTest {
         verify(mergeDuplicates).apply(internalRow1, internalRow1);
     }
 
-    @Test
     void stream() {
         TableRow row = mock(TableRow.class);
         Iterator<TableRow> iterator = Arrays.asList(row, null).iterator();
@@ -220,13 +206,11 @@ class AbstractTableTest {
         assertEquals(Arrays.asList(row, null), stream.collect(Collectors.toList()));
     }
 
-    @Test
     void iterator() {
         Iterator<TableRow> iterator = table.iterator();
         assertEquals(AbstractTable.TableIterator.class, iterator.getClass());
     }
 
-    @Test
     void testIteration() {
         table = getNotEmptyTable();
         //noinspection ConstantConditions
@@ -251,7 +235,6 @@ class AbstractTableTest {
         assertEquals(6, rowB.getRowNum());
     }
 
-    @Test
     void testIterationCount() {
         table = getNotEmptyTable();
         int cnt = 0;
@@ -261,7 +244,6 @@ class AbstractTableTest {
         assertEquals(2, cnt);
     }
 
-    @Test
     void testIteratorWithNullRows() {
         TableCellRange tableRange = TableCellRange.of(2, 6, 0, 100);
         //noinspection ConstantConditions
@@ -274,25 +256,21 @@ class AbstractTableTest {
         }
     }
 
-    @Test
     void getRow() {
         table.getRow(1);
         verify(report).getRow(1);
     }
 
-    @Test
     void findRowNotFound() {
         when(tableRange.contains(any())).thenReturn(false);
         assertNull(table.findRow("row value"));
     }
 
-    @Test
     void findRowFoundEmptyRow() {
         when(tableRange.contains(any())).thenReturn(true);
         assertThrows(NullPointerException.class, () -> table.findRow("row value"));
     }
 
-    @Test
     @SuppressWarnings("ConstantConditions")
     void findRow() {
         TableCellAddress address = TableCellAddress.of(1, 0);
@@ -309,7 +287,6 @@ class AbstractTableTest {
         verify(table).getRow(address.getRow());
     }
 
-    @Test
     void findRowByPrefix() {
         TableCellAddress address = TableCellAddress.of(1, 0);
         when(report.findByPrefix("row value")).thenReturn(address);
@@ -319,7 +296,6 @@ class AbstractTableTest {
         verify(report).findByPrefix("row value");
     }
 
-    @Test
     void testEqualsAndHashCode() {
         EqualsVerifier
                 .forClass(AbstractTable.class)
@@ -327,7 +303,6 @@ class AbstractTableTest {
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertEquals("AbstractTable(tableName=table name)", table.toString());
     }
@@ -358,8 +333,6 @@ class AbstractTableTest {
         }
     }
 
-    @Getter
-    @RequiredArgsConstructor
     enum Columns implements TableHeaderColumn {
         FIRST(LEFTMOST_COLUMN),
         SECOND(ConstantPositionTableColumn.of(1)),

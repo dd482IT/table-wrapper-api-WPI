@@ -30,7 +30,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import static lombok.AccessLevel.PRIVATE;
 
-@NoArgsConstructor(access = PRIVATE)
 final class DateTimeFormatParser {
 
     private static final Map<Pattern, DateTimeFormatter> dateTimeFormatters = new ConcurrentHashMap<>();
@@ -41,7 +40,7 @@ final class DateTimeFormatParser {
     }
 
     private static Pattern getPattern(String dateTimeOffset) {
-        @Nullable Pattern pattern = null;
+        Pattern pattern = null;
         int length = dateTimeOffset.length();
         if (length == 8 || length == 12) { // without and with millis
             pattern = getForTime(dateTimeOffset, 0);
@@ -152,8 +151,6 @@ final class DateTimeFormatParser {
         void build(StringBuilder format);
     }
 
-    @EqualsAndHashCode
-    @RequiredArgsConstructor(staticName = "of")
     private static class DatePattern implements Pattern {
         private final boolean isYearAtFirst;
         private final char dateSplitter;
@@ -167,9 +164,6 @@ final class DateTimeFormatParser {
         }
     }
 
-    @Getter
-    @EqualsAndHashCode
-    @RequiredArgsConstructor(staticName = "of")
     private static class TimePattern implements Pattern {
         private final boolean hasMillis;
 
@@ -182,8 +176,6 @@ final class DateTimeFormatParser {
         }
     }
 
-    @EqualsAndHashCode
-    @RequiredArgsConstructor(staticName = "of")
     private static class DateTimePattern implements Pattern {
         private final boolean isDateAtFirst;
         private final DatePattern datePattern;
@@ -207,8 +199,6 @@ final class DateTimeFormatParser {
         }
     }
 
-    @EqualsAndHashCode
-    @RequiredArgsConstructor(staticName = "of")
     private static class ZonedDateTimePattern implements Pattern {
         private final String zoneFormatter;
         private final DateTimePattern dateTimePattern;

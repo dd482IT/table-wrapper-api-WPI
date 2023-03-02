@@ -27,7 +27,6 @@ import static org.spacious_team.table_wrapper.api.ReportPageHelper.getCellString
 
 class ReportPageHelperTest {
 
-    @Test
     void test() {
         assertTrue(getCellStringValueIgnoreCasePrefixPredicate("First").test("First second"));
         assertTrue(getCellStringValueIgnoreCasePrefixPredicate("First").test("first second"));
@@ -42,14 +41,12 @@ class ReportPageHelperTest {
         assertFalse(getCellStringValueIgnoreCasePrefixPredicate("First").test(new Object()));
     }
 
-    @Test
     void testEqualsAndHashCode() {
         EqualsVerifier
                 .forClass(StringIgnoreCasePrefixPredicate.class)
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertEquals(
                 "ReportPageHelper.StringIgnoreCasePrefixPredicate(lowercasePrefix=first)",

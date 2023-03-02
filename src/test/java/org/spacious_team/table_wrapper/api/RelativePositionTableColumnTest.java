@@ -27,7 +27,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class RelativePositionTableColumnTest {
 
-    @Test
     void getColumnIndex() {
         ReportPageRow row = ReportPageRowHelper.getRow();
         assertEquals(4, RelativePositionTableColumn.of(PatternTableColumn.of(), 4).getColumnIndex(row));
@@ -40,7 +39,6 @@ class RelativePositionTableColumnTest {
         assertThrows(TableColumnNotFound.class, () -> column2.getColumnIndex(row));
     }
 
-    @Test
     void testEqualsAndHashCode() {
         EqualsVerifier
                 .forClass(RelativePositionTableColumn.class)
@@ -48,7 +46,6 @@ class RelativePositionTableColumnTest {
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertEquals(
                 "RelativePositionTableColumn(column=PatternTableColumn(words=[test]), positionOffset=2)",

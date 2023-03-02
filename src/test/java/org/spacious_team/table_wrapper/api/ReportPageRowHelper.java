@@ -28,7 +28,6 @@ import java.util.Collection;
 import static lombok.AccessLevel.PRIVATE;
 import static org.mockito.Mockito.*;
 
-@RequiredArgsConstructor(access = PRIVATE)
 final class ReportPageRowHelper {
 
     @SuppressWarnings({"nullness", "ConstantConditions"})
@@ -103,7 +102,6 @@ final class ReportPageRowHelper {
         return new TableCellTestImpl(value, columnIndex);
     }
 
-    @Getter
     private static class TableCellTestImpl extends AbstractTableCell<Object> {
         private final Object value;
         private final int columnIndex;

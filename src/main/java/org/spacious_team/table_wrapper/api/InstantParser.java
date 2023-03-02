@@ -75,19 +75,14 @@ import java.time.temporal.TemporalQueries;
  * If cell value doesn't contain date, when configured value used (default configuration value is current date).
  * If cell value doesn't contain time, when configured value used (default configuration value is 12:00:00).
  */
-@Builder
-@ToString
-@EqualsAndHashCode
 public class InstantParser {
     public static final InstantParser INSTANCE = InstantParser.builder().build();
     /**
      * If null, date time format is derived from value
      */
-    private final @Nullable DateTimeFormatter dateTimeFormatter;
-    private final @Nullable LocalDate defaultDate;
-    @Builder.Default
+    private final DateTimeFormatter dateTimeFormatter;
+    private final LocalDate defaultDate;
     private final LocalTime defaultTime = LocalTime.MIDNIGHT;
-    @Builder.Default
     private final ZoneId defaultZoneId = ZoneId.systemDefault();
 
     /**

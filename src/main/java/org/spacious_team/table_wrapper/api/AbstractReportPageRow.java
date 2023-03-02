@@ -26,11 +26,10 @@ import java.util.function.Function;
 
 public abstract class AbstractReportPageRow implements ReportPageRow {
 
-    @RequiredArgsConstructor
-    protected static class ReportPageRowIterator<T> implements Iterator<@Nullable TableCell> {
+    protected static class ReportPageRowIterator<T> implements Iterator<TableCell> {
 
-        private final Iterator<@Nullable T> innerIterator;
-        private final Function<@Nullable T, @Nullable TableCell> converter;
+        private final Iterator<T> innerIterator;
+        private final Function<T, TableCell> converter;
 
 
         @Override
@@ -39,7 +38,7 @@ public abstract class AbstractReportPageRow implements ReportPageRow {
         }
 
         @Override
-        public @Nullable TableCell next() {
+        public TableCell next() {
             return converter.apply(innerIterator.next());
         }
     }

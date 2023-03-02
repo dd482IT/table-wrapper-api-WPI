@@ -29,17 +29,13 @@ import java.math.BigDecimal;
 import java.time.Instant;
 import java.time.LocalDateTime;
 
-@ToString
-@EqualsAndHashCode
-@Getter(AccessLevel.PROTECTED)
-@RequiredArgsConstructor(access = AccessLevel.PROTECTED)
 public abstract class AbstractTableCell<T> implements TableCell {
 
     private final T cell;
     private final CellDataAccessObject<T, ?> dao;
 
     @Override
-    public @Nullable Object getValue() {
+    public Object getValue() {
         return dao.getValue(cell);
     }
 

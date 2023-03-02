@@ -26,7 +26,6 @@ import java.util.function.Predicate;
 import static java.util.Objects.requireNonNull;
 import static lombok.AccessLevel.PRIVATE;
 
-@RequiredArgsConstructor(access = PRIVATE)
 final class TableFactoryHelper {
 
     static String getTableName(ReportPage reportPage, Predicate<Object> tableNameFinder, TableCellRange range) {

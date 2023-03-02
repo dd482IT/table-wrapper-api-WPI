@@ -29,7 +29,7 @@ import java.util.function.Function;
 import java.util.stream.Stream;
 
 @SuppressWarnings({"unused", "UnusedReturnValue"})
-public interface Table extends Iterable<@Nullable TableRow> {
+public interface Table extends Iterable<TableRow> {
 
     /**
      * Report page this table belongs to
@@ -43,7 +43,7 @@ public interface Table extends Iterable<@Nullable TableRow> {
         return getData("unknown", rowExtractor);
     }
 
-    <T> List<T> getData(Object report, Function<TableRow, @Nullable T> rowExtractor);
+    <T> List<T> getData(Object report, Function<TableRow, T> rowExtractor);
 
     /**
      * Extracts objects from table without duplicate objects handling (duplicated row are both will be returned)
@@ -52,38 +52,36 @@ public interface Table extends Iterable<@Nullable TableRow> {
         return getDataCollection("unknown", rowExtractor);
     }
 
-    <T> List<T> getDataCollection(Object report, Function<TableRow, @Nullable Collection<T>> rowExtractor);
+    <T> List<T> getDataCollection(Object report, Function<TableRow, Collection<T>> rowExtractor);
 
     /**
      * Extracts objects from table with duplicate objects handling logic
      */
-    <T> List<T> getDataCollection(Object report, Function<TableRow, @Nullable Collection<T>> rowExtractor,
+    <T> List<T> getDataCollection(Object report, Function<TableRow, Collection<T>> rowExtractor,
                                   BiPredicate<T, T> equalityChecker,
-                                  BiFunction<T, T, @Nullable Collection<T>> mergeDuplicates);
+                                  BiFunction<T, T, Collection<T>> mergeDuplicates);
 
     boolean isEmpty();
 
-    Stream<@Nullable TableRow> stream();
+    Stream<TableRow> stream();
 
     /**
      * @param i zero-based index
      * @return row object or null is row does not exist
      * @apiNote Method impl should return {@link CellDataAccessObject} aware {@link ReportPageRow} impl
      */
-    @Nullable
     ReportPageRow getRow(int i);
 
     /**
      * @return row containing cell with exact value or null if row is not found
      */
-    @Nullable
     TableRow findRow(Object value);
 
     /**
      * @return row containing cell starting with prefix or null if row is not found
      */
     @SuppressWarnings("UnusedReturnValue")
-    @Nullable TableRow findRowByPrefix(String prefix);
+    TableRow findRowByPrefix(String prefix);
 
     Map<TableColumn, Integer> getHeaderDescription();
 

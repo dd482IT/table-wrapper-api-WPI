@@ -28,10 +28,6 @@ import static java.lang.Integer.MIN_VALUE;
 /**
  * Zero-based table cell range
  */
-@Getter
-@ToString
-@EqualsAndHashCode
-@RequiredArgsConstructor(staticName = "of")
 public class TableCellRange {
     public static final TableCellRange EMPTY_RANGE = new EmptyTableCellRange();
 

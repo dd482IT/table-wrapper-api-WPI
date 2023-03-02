@@ -23,9 +23,6 @@ import lombok.EqualsAndHashCode;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
-@ToString
-@EqualsAndHashCode
-@RequiredArgsConstructor(staticName = "of")
 public class RelativePositionTableColumn implements TableColumn {
     private final TableColumn column;
     private final int positionOffset;

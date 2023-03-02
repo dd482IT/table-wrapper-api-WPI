@@ -28,15 +28,11 @@ import java.math.BigDecimal;
 import java.time.Instant;
 import java.time.LocalDateTime;
 
-@ToString
-@EqualsAndHashCode
-@RequiredArgsConstructor(staticName = "of")
 public class EmptyTableCell implements TableCell {
-    @Getter
     private final int columnIndex;
 
     @Override
-    public @Nullable Object getValue() {
+    public Object getValue() {
         return null;
     }
 

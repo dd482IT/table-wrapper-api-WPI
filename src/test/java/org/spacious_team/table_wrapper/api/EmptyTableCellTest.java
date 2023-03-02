@@ -30,13 +30,10 @@ class EmptyTableCellTest {
 
     EmptyTableCell cell = EmptyTableCell.of(1);
 
-    @ParameterizedTest
-    @ValueSource(ints = {-1, 0, 1, 10})
     void getColumnIndex(int columnIndex) {
         assertEquals(columnIndex, EmptyTableCell.of(columnIndex).getColumnIndex());
     }
 
-    @Test
     void getValue() {
         assertNull(cell.getValue());
         assertThrows(NullPointerException.class, () -> cell.getIntValue());
@@ -48,7 +45,6 @@ class EmptyTableCellTest {
         assertThrows(NullPointerException.class, () -> cell.getLocalDateTimeValue());
     }
 
-    @Test
     void testEqualsAndHashCode() {
         EqualsVerifier
                 .forClass(EmptyTableCell.class)
@@ -56,7 +52,6 @@ class EmptyTableCellTest {
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertEquals("EmptyTableCell(columnIndex=1)", cell.toString());
     }

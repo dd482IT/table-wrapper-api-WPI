@@ -25,7 +25,6 @@ import java.util.regex.Pattern;
 
 import static lombok.AccessLevel.PRIVATE;
 
-@NoArgsConstructor(access = PRIVATE)
 final class CellDataAccessObjectHelper {
 
     static final ZoneId defaultZoneId = ZoneId.systemDefault();

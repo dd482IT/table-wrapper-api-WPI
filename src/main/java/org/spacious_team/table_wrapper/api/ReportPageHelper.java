@@ -26,15 +26,12 @@ import java.util.function.Predicate;
 
 import static lombok.AccessLevel.PRIVATE;
 
-@RequiredArgsConstructor(access = PRIVATE)
 final class ReportPageHelper {
 
     static Predicate<Object> getCellStringValueIgnoreCasePrefixPredicate(String prefix) {
         return new StringIgnoreCasePrefixPredicate(prefix);
     }
 
-    @ToString
-    @EqualsAndHashCode
     static final class StringIgnoreCasePrefixPredicate implements Predicate<Object> {
         private final String lowercasePrefix;
 

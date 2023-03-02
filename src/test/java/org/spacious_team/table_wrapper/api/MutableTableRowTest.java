@@ -32,23 +32,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertSame;
 import static org.mockito.Mockito.*;
 
-@ExtendWith(MockitoExtension.class)
 class MutableTableRowTest {
 
-    @Mock
     Table table;
-    @Mock
     CellDataAccessObject<?, ReportPageRow> dao;
-    @Mock
     TableHeaderColumn headerColumn;
-    @Mock
     TableColumn column;
     final int COLUMN_INDEX = 10;
-    @Mock
     ReportPageRow wrappedRow;
     MutableTableRow<ReportPageRow> row;
 
-    @BeforeEach
     void setUp() {
         row = spy(new MutableTableRow<>(table, dao));
         row.setRow(wrappedRow);
@@ -56,120 +49,100 @@ class MutableTableRowTest {
         lenient().when(table.getHeaderDescription()).thenReturn(Map.of(column, COLUMN_INDEX));
     }
 
-    @Test
     void getCell() {
         row.getCell(headerColumn);
         verify(row).getCell(COLUMN_INDEX);
     }
 
-    @Test
     void testGetCell() {
         row.getCell(COLUMN_INDEX);
         verify(wrappedRow).getCell(COLUMN_INDEX);
     }
 
-    @Test
     void getRowNum() {
         row.getRowNum();
         verify(wrappedRow).getRowNum();
     }
 
-    @Test
     void getFirstCellNum() {
         row.getFirstCellNum();
         verify(wrappedRow).getFirstCellNum();
     }
 
-    @Test
     void getLastCellNum() {
         row.getLastCellNum();
         verify(wrappedRow).getLastCellNum();
     }
 
-    @Test
     void rowContains() {
         Object object = new Object();
         row.rowContains(object);
         verify(wrappedRow).rowContains(object);
     }
 
-    @Test
     void iterator() {
         row.iterator();
         verify(wrappedRow).iterator();
     }
 
-    @Test
     void getCellValue() {
         row.getCellValue(headerColumn);
         verify(dao).getValue(wrappedRow, COLUMN_INDEX);
     }
 
-    @Test
     void getIntCellValue() {
         row.getIntCellValue(headerColumn);
         verify(dao).getIntValue(wrappedRow, COLUMN_INDEX);
     }
 
-    @Test
     void getLongCellValue() {
         row.getLongCellValue(headerColumn);
         verify(dao).getLongValue(wrappedRow, COLUMN_INDEX);
     }
 
-    @Test
     void getDoubleCellValue() {
         row.getDoubleCellValue(headerColumn);
         verify(dao).getDoubleValue(wrappedRow, COLUMN_INDEX);
     }
 
-    @Test
     void getBigDecimalCellValue() {
         row.getBigDecimalCellValue(headerColumn);
         verify(dao).getBigDecimalValue(wrappedRow, COLUMN_INDEX);
     }
 
-    @Test
     void getStringCellValue() {
         row.getStringCellValue(headerColumn);
         verify(dao).getStringValue(wrappedRow, COLUMN_INDEX);
     }
 
-    @Test
     void getInstantCellValue() {
         row.getInstantCellValue(headerColumn);
         verify(dao).getInstantValue(wrappedRow, COLUMN_INDEX);
     }
 
-    @Test
     void getLocalDateTimeCellValue() {
         row.getLocalDateTimeCellValue(headerColumn);
         verify(dao).getLocalDateTimeValue(wrappedRow, COLUMN_INDEX);
     }
 
-    @Test
     void testClone() {
         MutableTableRow<ReportPageRow> row = new MutableTableRow<>(table, dao);
         row.setRow(wrappedRow);
         assertEquals(row, row.clone());
     }
 
-    @Test
     void getTable() {
         assertSame(table, row.getTable());
     }
 
-    @Test
     void getDao() {
         assertSame(dao, row.getDao());
     }
 
-    @Test
     void getRow() {
         assertSame(wrappedRow, row.getRow());
     }
 
-    @Test
     void testEquals() {
         EqualsVerifier
                 .forClass(MutableTableRow.class)
@@ -178,7 +151,6 @@ class MutableTableRowTest {
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertEquals("MutableTableRow(table=table, dao=dao, row=wrappedRow)", row.toString());
     }

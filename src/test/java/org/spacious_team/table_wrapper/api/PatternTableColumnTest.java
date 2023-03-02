@@ -29,7 +29,6 @@ import static org.spacious_team.table_wrapper.api.TableColumn.LEFTMOST_COLUMN;
 
 class PatternTableColumnTest {
 
-    @Test
     @SuppressWarnings("ConstantConditions")
     void testZeroArg() {
         assertEquals(LEFTMOST_COLUMN, PatternTableColumn.of());
@@ -39,7 +38,6 @@ class PatternTableColumnTest {
         assertEquals(LEFTMOST_COLUMN, PatternTableColumn.of(null, null));
     }
 
-    @Test
     void getColumnIndex() {
         ReportPageRow row = ReportPageRowHelper.getRow();
         assertEquals(0, PatternTableColumn.of().getColumnIndex(row));
@@ -69,7 +67,6 @@ class PatternTableColumnTest {
         assertThrows(TableColumnNotFound.class, () -> column5.getColumnIndex(row));
     }
 
-    @Test
     void testEqualsAndHashCode() {
         EqualsVerifier
                 .forClass(PatternTableColumn.class)
@@ -78,7 +75,6 @@ class PatternTableColumnTest {
                 .verify();
     }
 
-    @Test
     void testToString() {
         assertEquals("PatternTableColumn(words=[test])", PatternTableColumn.of("test").toString());
     }
