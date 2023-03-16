@@ -51,7 +51,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <lombok.version>1.18.24</lombok.version>
-        <checkerframework.version>3.31.1-SNAPSHOT</checkerframework.version>
+        <checkerframework.version>3.32.1-SNAPSHOT</checkerframework.version>
     </properties>
 
     <dependencies>
@@ -125,9 +125,9 @@
                         </path>
                     </annotationProcessorPaths>
                     <annotationProcessors>
-                        <annotationProcessor>
+                        <!-- <annotationProcessor>
                             lombok.launch.AnnotationProcessorHider$AnnotationProcessor
-                        </annotationProcessor>
+                        </annotationProcessor> -->
                         <annotationProcessor>
                             org.checkerframework.checker.nullness.NullnessChecker
                         </annotationProcessor>
@@ -146,7 +146,7 @@
                         <arg>-Awarns</arg>
                         <arg>-AshowPrefixInWarningMessages</arg>
                         <arg>-Aajava=/tmp/WPITEMP-table-wrapper</arg>
-                    </compilerArgs>
+m                    </compilerArgs>
                 </configuration>
             </plugin>
             <plugin>
