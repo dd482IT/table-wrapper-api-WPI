@@ -1,0 +1,417 @@
+@Pure:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.010508 seconds spent searching
+0.009916 seconds
+@org.checkerframework.dataflow.qual.Pure:
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractTableCell-org.checkerframework.checker.nullness.NullnessChecker.ajava:8
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/PatternTableColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:5
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/PatternTableColumn-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:5
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableCellRange-org.checkerframework.checker.nullness.NullnessChecker.ajava:18
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/CellDataAccessObject-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:4
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ConstantPositionTableColumn-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:5
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableHeaderColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/RelativePositionTableColumn-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:5
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractTableCell-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:8
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AnyOfTableColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:3
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/Table-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:14
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractReportPageRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableHeaderColumn-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/MultiLineTableColumn-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:4
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/OptionalTableColumn-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:4
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/OptionalTableColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:4
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ReportPageRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:5
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AnyOfTableColumn-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:3
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ReportPage-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:11
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ConstantPositionTableColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:5
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/RelativePositionTableColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:5
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/CellDataAccessObject-org.checkerframework.checker.nullness.NullnessChecker.ajava:4
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractReportPage-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableFactory-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:2
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ReportPage-org.checkerframework.checker.nullness.NullnessChecker.ajava:11
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/DateTimeFormatParser-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:14
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractTable-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:13
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ReportPageHelper-org.checkerframework.checker.nullness.NullnessChecker.ajava:3
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/Table-org.checkerframework.checker.nullness.NullnessChecker.ajava:14
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractTable-org.checkerframework.checker.nullness.NullnessChecker.ajava:13
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableCell-org.checkerframework.checker.nullness.NullnessChecker.ajava:9
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableCellRange-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:18
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/EmptyTableCell-org.checkerframework.checker.nullness.NullnessChecker.ajava:13
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractTableFactory-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:6
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/MultiLineTableColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:4
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableRow-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:11
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableCellAddress-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:6
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/MutableTableRow-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:12
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/EmptyTableRow-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:19
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:2
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableCellAddress-org.checkerframework.checker.nullness.NullnessChecker.ajava:6
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractReportPage-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableCell-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:9
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ReportPageRow-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:5
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/EmptyTableCell-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:13
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableColumn-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:2
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:11
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/InstantParser-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:7
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ReportPageHelper-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:3
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractReportPageRow-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableFactory-org.checkerframework.checker.nullness.NullnessChecker.ajava:2
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractTableFactory-org.checkerframework.checker.nullness.NullnessChecker.ajava:6
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/InstantParser-org.checkerframework.checker.nullness.NullnessChecker.ajava:7
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/MutableTableRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:12
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/EmptyTableRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:19
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/DateTimeFormatParser-org.checkerframework.checker.nullness.NullnessChecker.ajava:14
+
+412 matches
+412 matched lines
+56 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.036736 seconds spent searching
+0.007656 seconds
+@SideEffectFree:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.000632 seconds spent searching
+0.003370 seconds
+org.checkerframework.dataflow.qual.SideEffectFree:
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableFactoryHelper-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ReportPage-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/CellDataAccessObjectHelper-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/DateTimeFormatParser-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/CellDataAccessObject-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:3
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractTableCell-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractTableCell-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableColumnNotFound-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:2
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AnyOfTableColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/OptionalTableColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/OptionalTableColumn-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/OptionalTableColumnNotFound-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AnyOfTableColumn-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/CellDataAccessObjectHelper-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ReportPage-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/OptionalTableColumnNotFound-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/MultiLineTableColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/MutableTableRow-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:5
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ReportPageHelper-org.checkerframework.checker.nullness.NullnessChecker.ajava:2
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/CellDataAccessObject-org.checkerframework.checker.nullness.NullnessChecker.ajava:3
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/EmptyTableRow-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/MultiLineTableColumn-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableFactoryRegistry-org.checkerframework.checker.nullness.NullnessChecker.ajava:2
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableFactoryHelper-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/MutableTableRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:5
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/EmptyTableRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableCell-org.checkerframework.checker.nullness.NullnessChecker.ajava:8
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableRow-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:8
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/InstantParser-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:2
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/DateTimeFormatParser-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ReportPageHelper-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:2
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/InstantParser-org.checkerframework.checker.nullness.NullnessChecker.ajava:2
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:8
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableColumnNotFound-org.checkerframework.checker.nullness.NullnessChecker.ajava:2
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableCell-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:8
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableFactoryRegistry-org.checkerframework.checker.nullness.KeyForSubchecker.ajava:2
+
+84 matches
+84 matched lines
+36 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.026443 seconds spent searching
+0.006164 seconds
+@Deterministic:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.000388 seconds spent searching
+0.003015 seconds
+@org.checkerframework.dataflow.qual.Deterministic:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.016993 seconds spent searching
+0.005358 seconds
+@RequiresQualifier:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.000328 seconds spent searching
+0.002948 seconds
+@org.checkerframework.framework.qual.RequiresQualifier:
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/MutableTableRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:2
+
+2 matches
+2 matched lines
+1 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.001835 seconds spent searching
+0.003590 seconds
+@EnsulresQualifer:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.000269 seconds spent searching
+0.002834 seconds
+@org.checkerframework.framework.qual.EnsulresQualifer:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.000279 seconds spent searching
+0.003313 seconds
+@RequiresQualifierIf:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.000303 seconds spent searching
+0.004109 seconds
+@org.checkerframework.framework.qual.RequiresQualifierIf:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.000490 seconds spent searching
+0.003138 seconds
+@EnsuresQualiferIf:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.000323 seconds spent searching
+0.003377 seconds
+@org.checkerframework.framework.qual.EnsuresQualiferIf:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.000289 seconds spent searching
+0.003014 seconds
+@Nullable:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.000332 seconds spent searching
+0.003316 seconds
+@org.checkerframework.checker.nullness.qual.Nullable:
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractTable-org.checkerframework.checker.nullness.NullnessChecker.ajava:3
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/CellDataAccessObject-org.checkerframework.checker.nullness.NullnessChecker.ajava:9
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ReportPageRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/EmptyTableCell-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableCell-org.checkerframework.checker.nullness.NullnessChecker.ajava:2
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ReportPage-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/MutableTableRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:2
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/EmptyTableRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:3
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:3
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/Table-org.checkerframework.checker.nullness.NullnessChecker.ajava:2
+
+27 matches
+27 matched lines
+10 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.016987 seconds spent searching
+0.005083 seconds
+@NonNull:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.000343 seconds spent searching
+0.003212 seconds
+@org.checkerframework.checker.nullness.qual.NonNull:
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/RelativePositionTableColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:5
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableCellRange-org.checkerframework.checker.nullness.NullnessChecker.ajava:35
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractReportPageRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:4
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AnyOfTableColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:10
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/OptionalTableColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:8
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/PatternTableColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:12
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ReportPageRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:6
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ConstantPositionTableColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:5
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/CellDataAccessObjectHelper-org.checkerframework.checker.nullness.NullnessChecker.ajava:3
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/CellDataAccessObject-org.checkerframework.checker.nullness.NullnessChecker.ajava:26
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ReportPage-org.checkerframework.checker.nullness.NullnessChecker.ajava:77
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/Table-org.checkerframework.checker.nullness.NullnessChecker.ajava:13
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/EmptyTableCell-org.checkerframework.checker.nullness.NullnessChecker.ajava:8
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/ReportPageHelper-org.checkerframework.checker.nullness.NullnessChecker.ajava:7
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/OptionalTableColumnNotFound-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractTable-org.checkerframework.checker.nullness.NullnessChecker.ajava:56
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableFactoryRegistry-org.checkerframework.checker.nullness.NullnessChecker.ajava:5
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/MultiLineTableColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:9
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableFactoryHelper-org.checkerframework.checker.nullness.NullnessChecker.ajava:4
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableColumn-org.checkerframework.checker.nullness.NullnessChecker.ajava:9
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableCell-org.checkerframework.checker.nullness.NullnessChecker.ajava:14
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableColumnNotFound-org.checkerframework.checker.nullness.NullnessChecker.ajava:2
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/DateTimeFormatParser-org.checkerframework.checker.nullness.NullnessChecker.ajava:27
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/EmptyTableRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:34
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/MutableTableRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:45
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:23
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractTableFactory-org.checkerframework.checker.nullness.NullnessChecker.ajava:3
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableCellAddress-org.checkerframework.checker.nullness.NullnessChecker.ajava:3
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/TableFactory-org.checkerframework.checker.nullness.NullnessChecker.ajava:91
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/InstantParser-org.checkerframework.checker.nullness.NullnessChecker.ajava:8
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractReportPage-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/AbstractTableCell-org.checkerframework.checker.nullness.NullnessChecker.ajava:16
+
+570 matches
+268 matched lines
+32 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.017365 seconds spent searching
+0.005203 seconds
+@PolyNull:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.000341 seconds spent searching
+0.002765 seconds
+@org.checkerframework.checker.nullness.qual.PolyNull:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.015811 seconds spent searching
+0.005119 seconds
+@MonotonicNonNull:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.000357 seconds spent searching
+0.002785 seconds
+@org.checkerframework.checker.nullness.qual.MonotonicNonNull:
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/MutableTableRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:1
+
+1 matches
+1 matched lines
+1 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.001401 seconds spent searching
+0.003541 seconds
+@RequiresNonNull:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.000317 seconds spent searching
+0.002842 seconds
+@org.checkerframework.checker.nullness.qual.RequiresNonNull:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.015817 seconds spent searching
+0.004875 seconds
+@EnsuresNonNull:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.000340 seconds spent searching
+0.002807 seconds
+@org.checkerframework.checker.nullness.qual.EnsuresNonNull:
+wpi-annotations/whole-program-inference/org/spacious_team/table_wrapper/api/MutableTableRow-org.checkerframework.checker.nullness.NullnessChecker.ajava:7
+
+7 matches
+7 matched lines
+1 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.011643 seconds spent searching
+0.004713 seconds
+@EnsuresNonNullIf:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.000336 seconds spent searching
+0.003697 seconds
+@org.checkerframework.checker.nullness.qual.EnsuresNonNullIf:
+
+0 matches
+0 matched lines
+0 files contained matches
+66 files searched
+0 bytes printed
+410913 bytes searched
+0.000317 seconds spent searching
+0.003623 seconds
