@@ -1,0 +1,301 @@
+@Pure:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.002493 seconds spent searching
+0.006423 seconds
+@org.checkerframework.dataflow.qual.Pure:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.011574 seconds spent searching
+0.005311 seconds
+@SideEffectFree:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000389 seconds spent searching
+0.003536 seconds
+org.checkerframework.dataflow.qual.SideEffectFree:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.015412 seconds spent searching
+0.005742 seconds
+@Deterministic:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000411 seconds spent searching
+0.003154 seconds
+@org.checkerframework.dataflow.qual.Deterministic:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.008374 seconds spent searching
+0.004310 seconds
+@RequiresQualifier:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000351 seconds spent searching
+0.002847 seconds
+@org.checkerframework.framework.qual.RequiresQualifier:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000262 seconds spent searching
+0.002726 seconds
+@EnsulresQualifer:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000220 seconds spent searching
+0.002924 seconds
+@org.checkerframework.framework.qual.EnsulresQualifer:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000254 seconds spent searching
+0.002770 seconds
+@RequiresQualifierIf:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000274 seconds spent searching
+0.002580 seconds
+@org.checkerframework.framework.qual.RequiresQualifierIf:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000218 seconds spent searching
+0.002548 seconds
+@EnsuresQualiferIf:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000251 seconds spent searching
+0.002722 seconds
+@org.checkerframework.framework.qual.EnsuresQualiferIf:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000338 seconds spent searching
+0.002683 seconds
+@Nullable:
+src/main/java/org/spacious_team/table_wrapper/api/TableRow.java:4
+src/main/java/org/spacious_team/table_wrapper/api/EmptyTableRow.java:3
+src/main/java/org/spacious_team/table_wrapper/api/AbstractTableCell.java:1
+src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:5
+src/main/java/org/spacious_team/table_wrapper/api/EmptyTableCell.java:1
+src/main/java/org/spacious_team/table_wrapper/api/InstantParser.java:2
+src/main/java/org/spacious_team/table_wrapper/api/ReportPageRow.java:2
+src/main/java/org/spacious_team/table_wrapper/api/AbstractReportPage.java:1
+src/main/java/org/spacious_team/table_wrapper/api/AbstractReportPageRow.java:5
+src/main/java/org/spacious_team/table_wrapper/api/PatternTableColumn.java:3
+src/main/java/org/spacious_team/table_wrapper/api/DateTimeFormatParser.java:1
+src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObject.java:6
+src/main/java/org/spacious_team/table_wrapper/api/TableCell.java:3
+src/main/java/org/spacious_team/table_wrapper/api/Table.java:9
+src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:17
+src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:18
+src/test/java/org/spacious_team/table_wrapper/api/AbstractReportPageRowTest.java:1
+src/test/java/org/spacious_team/table_wrapper/api/ReportPageTest.java:3
+src/test/java/org/spacious_team/table_wrapper/api/AbstractReportPageTest.java:1
+src/test/java/org/spacious_team/table_wrapper/api/TableCellTest.java:1
+
+87 matches
+84 matched lines
+20 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.003637 seconds spent searching
+0.003306 seconds
+@org.checkerframework.checker.nullness.qual.Nullable:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.006935 seconds spent searching
+0.003928 seconds
+@NonNull:
+src/test/java/org/spacious_team/table_wrapper/api/InstantParserTest.java:1
+
+1 matches
+1 matched lines
+1 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000482 seconds spent searching
+0.002608 seconds
+@org.checkerframework.checker.nullness.qual.NonNull:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.007004 seconds spent searching
+0.003969 seconds
+@PolyNull:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000359 seconds spent searching
+0.002752 seconds
+@org.checkerframework.checker.nullness.qual.PolyNull:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.006855 seconds spent searching
+0.004702 seconds
+@MonotonicNonNull:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000316 seconds spent searching
+0.002813 seconds
+@org.checkerframework.checker.nullness.qual.MonotonicNonNull:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000242 seconds spent searching
+0.002510 seconds
+@RequiresNonNull:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000357 seconds spent searching
+0.002701 seconds
+@org.checkerframework.checker.nullness.qual.RequiresNonNull:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.007159 seconds spent searching
+0.003927 seconds
+@EnsuresNonNull:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000374 seconds spent searching
+0.003850 seconds
+@org.checkerframework.checker.nullness.qual.EnsuresNonNull:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.006973 seconds spent searching
+0.003958 seconds
+@EnsuresNonNullIf:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000341 seconds spent searching
+0.003268 seconds
+@org.checkerframework.checker.nullness.qual.EnsuresNonNullIf:
+
+0 matches
+0 matched lines
+0 files contained matches
+63 files searched
+0 bytes printed
+269034 bytes searched
+0.000344 seconds spent searching
+0.002651 seconds
