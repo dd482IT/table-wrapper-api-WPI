@@ -1,0 +1,493 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< org.spacious-team:table-wrapper-api >-----------------
+[INFO] Building Table Wrapper API 2022.4
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.8:prepare-agent (prepare-agent) @ table-wrapper-api ---
+[INFO] argLine set to -javaagent:/Users/daniel/.m2/repository/org/jacoco/org.jacoco.agent/0.8.8/org.jacoco.agent-0.8.8-runtime.jar=destfile=/Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.0:resources (default-resources) @ table-wrapper-api ---
+[INFO] skip non existing resourceDirectory /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ table-wrapper-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 34 source files to /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/target/classes
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] [options] system modules path not set in conjunction with -source 11
+[INFO] 1 warning
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ConstantPositionTableColumn.java:[26,22] error: variable columnIndex not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ConstantPositionTableColumn.java:[25,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableColumn.java:[21,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPageRow.java:[23,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCell.java:[27,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObjectHelper.java:[28,6] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[44,27] error: cannot find symbol
+  symbol:   method getColumn()
+  location: variable bottomRight of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[43,25] error: cannot find symbol
+  symbol:   method getColumn()
+  location: variable upperLeft of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[42,27] error: cannot find symbol
+  symbol:   method getRow()
+  location: variable bottomRight of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[41,25] error: cannot find symbol
+  symbol:   method getRow()
+  location: variable upperLeft of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[48,34] error: cannot find symbol
+  symbol:   method getRow()
+  location: variable address of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[48,70] error: cannot find symbol
+  symbol:   method getColumn()
+  location: variable address of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[65,29] error: method of in class TableCellRange cannot be applied to given types;
+  required: TableCellAddress,TableCellAddress
+  found:    int,int,int,int
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[72,29] error: method of in class TableCellRange cannot be applied to given types;
+  required: TableCellAddress,TableCellAddress
+  found:    int,int,int,int
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[82,29] error: method of in class TableCellRange cannot be applied to given types;
+  required: TableCellAddress,TableCellAddress
+  found:    int,int,int,int
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[90,29] error: method of in class TableCellRange cannot be applied to given types;
+  required: TableCellAddress,TableCellAddress
+  found:    int,int,int,int
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[96,12] error: constructor TableCellRange in class TableCellRange cannot be applied to given types;
+  required: no arguments
+  found:    int,int,int,int
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[34,22] error: variable firstRow not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[35,22] error: variable lastRow not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[36,22] error: variable firstColumn not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[37,22] error: variable lastColumn not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[31,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellAddress.java:[29,53] error: constructor TableCellAddress in class TableCellAddress cannot be applied to given types;
+  required: no arguments
+  found:    int,int
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellAddress.java:[31,22] error: variable row not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellAddress.java:[32,22] error: variable column not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellAddress.java:[28,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTableCell.java:[34,20] error: variable cell not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTableCell.java:[35,45] error: variable dao not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTableCell.java:[32,16] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObject.java:[36,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableCell.java:[31,7] error: EmptyTableCell is not abstract and does not override abstract method getColumnIndex() in TableCell
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableCell.java:[32,22] error: variable columnIndex not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableCell.java:[31,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableFactoryRegistry.java:[31,13] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:[23,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPageHelper.java:[29,6] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[168,42] error: cannot find symbol
+  symbol:   method getRow()
+  location: variable address of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[171,67] error: cannot find symbol
+  symbol:   method getColumn()
+  location: variable address of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[195,42] error: cannot find symbol
+  symbol:   method getRow()
+  location: variable address of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[196,57] error: cannot find symbol
+  symbol:   method getColumn()
+  location: variable address of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[229,67] error: cannot find symbol
+  symbol:   method getRow()
+  location: variable startAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[230,55] error: cannot find symbol
+  symbol:   method getRow()
+  location: variable startAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[235,64] error: cannot find symbol
+  symbol:   method getRow()
+  location: variable endAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[238,26] error: cannot find symbol
+  symbol:   method getRow()
+  location: variable endAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[237,28] error: cannot find symbol
+  symbol:   method getRow()
+  location: variable startAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[268,67] error: cannot find symbol
+  symbol:   method getRow()
+  location: variable startAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[269,51] error: cannot find symbol
+  symbol:   method getRow()
+  location: variable startAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[276,39] error: cannot find symbol
+  symbol:   method getRow()
+  location: variable startAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[277,38] error: cannot find symbol
+  symbol:   method getRow()
+  location: variable startAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[285,28] error: cannot find symbol
+  symbol:   method getRow()
+  location: variable startAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[29,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableHeaderColumn.java:[24,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/Table.java:[32,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableRow.java:[30,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MultiLineTableColumn.java:[46,15] error: constructor MultiLineTableColumn in class MultiLineTableColumn cannot be applied to given types;
+  required: no arguments
+  found:    TableColumn[]
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MultiLineTableColumn.java:[54,15] error: constructor MultiLineTableColumn in class MultiLineTableColumn cannot be applied to given types;
+  required: no arguments
+  found:    TableColumn[]
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MultiLineTableColumn.java:[40,32] error: variable rowDescriptors not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MultiLineTableColumn.java:[39,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/PatternTableColumn.java:[62,15] error: constructor PatternTableColumn in class PatternTableColumn cannot be applied to given types;
+  required: no arguments
+  found:    Pattern[],Set<String>
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/PatternTableColumn.java:[40,28] error: variable patterns not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/PatternTableColumn.java:[41,30] error: variable words not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/PatternTableColumn.java:[39,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractReportPageRow.java:[31,34] error: variable innerIterator not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractReportPageRow.java:[32,45] error: variable converter not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractReportPageRow.java:[27,16] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/OptionalTableColumnNotFound.java:[21,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableColumnNotFound.java:[21,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableFactoryHelper.java:[35,66] error: cannot find symbol
+  symbol:   method getFirstRow()
+  location: variable range of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableFactoryHelper.java:[35,45] error: cannot find symbol
+  symbol:   method getFirstRow()
+  location: variable range of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableFactoryHelper.java:[29,6] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractReportPage.java:[26,16] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[82,88] error: cannot find symbol
+  symbol:   method getLastColumn()
+  location: variable tableRange of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[81,88] error: cannot find symbol
+  symbol:   method getFirstColumn()
+  location: variable tableRange of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[80,34] error: cannot find symbol
+  symbol:   method getLastRow()
+  location: variable tableRange of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[79,34] error: cannot find symbol
+  symbol:   method getFirstRow()
+  location: variable tableRange of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[100,25] error: cannot find symbol
+  symbol:   method getLastRow()
+  location: variable tableRange of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[100,51] error: cannot find symbol
+  symbol:   method getFirstRow()
+  location: variable tableRange of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[110,60] error: cannot find symbol
+  symbol:   method getFirstRow()
+  location: variable tableRange of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[124,16] error: cannot find symbol
+  symbol:   variable log
+  location: class AbstractTable<R>
+  where R is a type-variable:
+    R extends ReportPageRow declared in class AbstractTable
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[174,20] error: cannot find symbol
+  symbol:   variable log
+  location: class AbstractTable<R>
+  where R is a type-variable:
+    R extends ReportPageRow declared in class AbstractTable
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[228,16] error: cannot infer type arguments for MutableTableRow<>
+  reason: cannot infer type-variable(s) T
+    (actual and formal argument lists differ in length)
+  where T is a type-variable:
+    T extends ReportPageRow declared in class MutableTableRow
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[245,35] error: cannot find symbol
+  symbol:   method getFirstRow()
+  location: variable tableRange of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[248,23] error: constructor EmptyTableRow in class EmptyTableRow cannot be applied to given types;
+  required: no arguments
+  found:    AbstractTable<R>,int
+  reason: actual and formal argument lists differ in length
+  where R is a type-variable:
+    R extends ReportPageRow declared in class AbstractTable
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[250,20] error: cannot find symbol
+  symbol:   method setRow(R)
+  location: variable tableRow of type MutableTableRow<R>
+  where R is a type-variable:
+    R extends ReportPageRow declared in class AbstractTable
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[274,42] error: cannot infer type arguments for MutableTableRow<>
+  reason: cannot infer type-variable(s) T
+    (actual and formal argument lists differ in length)
+  where T is a type-variable:
+    T extends ReportPageRow declared in class MutableTableRow
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[276,49] error: cannot find symbol
+  symbol:   method getRow()
+  location: variable address of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[277,20] error: cannot find symbol
+  symbol:   method setRow(R)
+  location: variable tableRow of type MutableTableRow<R>
+  where R is a type-variable:
+    R extends ReportPageRow declared in class AbstractTable
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[47,16] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[40] error: MutableTableRow is not abstract and does not override abstract method getTable() in TableRow
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[42,24] error: variable table not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[43,45] error: variable dao not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[139,47] error: unreported exception CloneNotSupportedException; must be caught or declared to be thrown
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[40] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/RelativePositionTableColumn.java:[27,30] error: variable column not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/RelativePositionTableColumn.java:[28,22] error: variable positionOffset not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/RelativePositionTableColumn.java:[26,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/DateTimeFormatParser.java:[62,26] error: cannot find symbol
+  symbol:   method of(boolean)
+  location: class TimePattern
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/DateTimeFormatParser.java:[78,26] error: cannot find symbol
+  symbol:   method of(boolean,char)
+  location: class DatePattern
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/DateTimeFormatParser.java:[90,43] error: cannot find symbol
+  symbol:   method isHasMillis()
+  location: variable timePattern of type TimePattern
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/DateTimeFormatParser.java:[100,30] error: cannot find symbol
+  symbol:   method of(boolean,DatePattern,TimePattern,char)
+  location: class DateTimePattern
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.546 s
+[INFO] Finished at: 2023-03-24T13:43:35-04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile (default-compile) on project table-wrapper-api: Compilation failure: Compilation failure: 
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ConstantPositionTableColumn.java:[26,22] error: variable columnIndex not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ConstantPositionTableColumn.java:[25,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableColumn.java:[21,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPageRow.java:[23,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCell.java:[27,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObjectHelper.java:[28,6] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[44,27] error: cannot find symbol
+[ERROR]   symbol:   method getColumn()
+[ERROR]   location: variable bottomRight of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[43,25] error: cannot find symbol
+[ERROR]   symbol:   method getColumn()
+[ERROR]   location: variable upperLeft of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[42,27] error: cannot find symbol
+[ERROR]   symbol:   method getRow()
+[ERROR]   location: variable bottomRight of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[41,25] error: cannot find symbol
+[ERROR]   symbol:   method getRow()
+[ERROR]   location: variable upperLeft of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[48,34] error: cannot find symbol
+[ERROR]   symbol:   method getRow()
+[ERROR]   location: variable address of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[48,70] error: cannot find symbol
+[ERROR]   symbol:   method getColumn()
+[ERROR]   location: variable address of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[65,29] error: method of in class TableCellRange cannot be applied to given types;
+[ERROR]   required: TableCellAddress,TableCellAddress
+[ERROR]   found:    int,int,int,int
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[72,29] error: method of in class TableCellRange cannot be applied to given types;
+[ERROR]   required: TableCellAddress,TableCellAddress
+[ERROR]   found:    int,int,int,int
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[82,29] error: method of in class TableCellRange cannot be applied to given types;
+[ERROR]   required: TableCellAddress,TableCellAddress
+[ERROR]   found:    int,int,int,int
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[90,29] error: method of in class TableCellRange cannot be applied to given types;
+[ERROR]   required: TableCellAddress,TableCellAddress
+[ERROR]   found:    int,int,int,int
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[96,12] error: constructor TableCellRange in class TableCellRange cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    int,int,int,int
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[34,22] error: variable firstRow not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[35,22] error: variable lastRow not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[36,22] error: variable firstColumn not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[37,22] error: variable lastColumn not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:[31,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellAddress.java:[29,53] error: constructor TableCellAddress in class TableCellAddress cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    int,int
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellAddress.java:[31,22] error: variable row not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellAddress.java:[32,22] error: variable column not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableCellAddress.java:[28,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTableCell.java:[34,20] error: variable cell not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTableCell.java:[35,45] error: variable dao not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTableCell.java:[32,16] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObject.java:[36,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableCell.java:[31,7] error: EmptyTableCell is not abstract and does not override abstract method getColumnIndex() in TableCell
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableCell.java:[32,22] error: variable columnIndex not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableCell.java:[31,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableFactoryRegistry.java:[31,13] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:[23,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPageHelper.java:[29,6] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[168,42] error: cannot find symbol
+[ERROR]   symbol:   method getRow()
+[ERROR]   location: variable address of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[171,67] error: cannot find symbol
+[ERROR]   symbol:   method getColumn()
+[ERROR]   location: variable address of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[195,42] error: cannot find symbol
+[ERROR]   symbol:   method getRow()
+[ERROR]   location: variable address of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[196,57] error: cannot find symbol
+[ERROR]   symbol:   method getColumn()
+[ERROR]   location: variable address of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[229,67] error: cannot find symbol
+[ERROR]   symbol:   method getRow()
+[ERROR]   location: variable startAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[230,55] error: cannot find symbol
+[ERROR]   symbol:   method getRow()
+[ERROR]   location: variable startAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[235,64] error: cannot find symbol
+[ERROR]   symbol:   method getRow()
+[ERROR]   location: variable endAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[238,26] error: cannot find symbol
+[ERROR]   symbol:   method getRow()
+[ERROR]   location: variable endAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[237,28] error: cannot find symbol
+[ERROR]   symbol:   method getRow()
+[ERROR]   location: variable startAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[268,67] error: cannot find symbol
+[ERROR]   symbol:   method getRow()
+[ERROR]   location: variable startAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[269,51] error: cannot find symbol
+[ERROR]   symbol:   method getRow()
+[ERROR]   location: variable startAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[276,39] error: cannot find symbol
+[ERROR]   symbol:   method getRow()
+[ERROR]   location: variable startAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[277,38] error: cannot find symbol
+[ERROR]   symbol:   method getRow()
+[ERROR]   location: variable startAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[285,28] error: cannot find symbol
+[ERROR]   symbol:   method getRow()
+[ERROR]   location: variable startAddress of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[29,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableHeaderColumn.java:[24,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/Table.java:[32,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableRow.java:[30,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MultiLineTableColumn.java:[46,15] error: constructor MultiLineTableColumn in class MultiLineTableColumn cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    TableColumn[]
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MultiLineTableColumn.java:[54,15] error: constructor MultiLineTableColumn in class MultiLineTableColumn cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    TableColumn[]
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MultiLineTableColumn.java:[40,32] error: variable rowDescriptors not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MultiLineTableColumn.java:[39,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/PatternTableColumn.java:[62,15] error: constructor PatternTableColumn in class PatternTableColumn cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    Pattern[],Set<String>
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/PatternTableColumn.java:[40,28] error: variable patterns not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/PatternTableColumn.java:[41,30] error: variable words not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/PatternTableColumn.java:[39,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractReportPageRow.java:[31,34] error: variable innerIterator not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractReportPageRow.java:[32,45] error: variable converter not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractReportPageRow.java:[27,16] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/OptionalTableColumnNotFound.java:[21,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableColumnNotFound.java:[21,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableFactoryHelper.java:[35,66] error: cannot find symbol
+[ERROR]   symbol:   method getFirstRow()
+[ERROR]   location: variable range of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableFactoryHelper.java:[35,45] error: cannot find symbol
+[ERROR]   symbol:   method getFirstRow()
+[ERROR]   location: variable range of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableFactoryHelper.java:[29,6] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractReportPage.java:[26,16] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[82,88] error: cannot find symbol
+[ERROR]   symbol:   method getLastColumn()
+[ERROR]   location: variable tableRange of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[81,88] error: cannot find symbol
+[ERROR]   symbol:   method getFirstColumn()
+[ERROR]   location: variable tableRange of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[80,34] error: cannot find symbol
+[ERROR]   symbol:   method getLastRow()
+[ERROR]   location: variable tableRange of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[79,34] error: cannot find symbol
+[ERROR]   symbol:   method getFirstRow()
+[ERROR]   location: variable tableRange of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[100,25] error: cannot find symbol
+[ERROR]   symbol:   method getLastRow()
+[ERROR]   location: variable tableRange of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[100,51] error: cannot find symbol
+[ERROR]   symbol:   method getFirstRow()
+[ERROR]   location: variable tableRange of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[110,60] error: cannot find symbol
+[ERROR]   symbol:   method getFirstRow()
+[ERROR]   location: variable tableRange of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[124,16] error: cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class AbstractTable<R>
+[ERROR]   where R is a type-variable:
+[ERROR]     R extends ReportPageRow declared in class AbstractTable
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[174,20] error: cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class AbstractTable<R>
+[ERROR]   where R is a type-variable:
+[ERROR]     R extends ReportPageRow declared in class AbstractTable
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[228,16] error: cannot infer type arguments for MutableTableRow<>
+[ERROR]   reason: cannot infer type-variable(s) T
+[ERROR]     (actual and formal argument lists differ in length)
+[ERROR]   where T is a type-variable:
+[ERROR]     T extends ReportPageRow declared in class MutableTableRow
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[245,35] error: cannot find symbol
+[ERROR]   symbol:   method getFirstRow()
+[ERROR]   location: variable tableRange of type TableCellRange
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[248,23] error: constructor EmptyTableRow in class EmptyTableRow cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    AbstractTable<R>,int
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR]   where R is a type-variable:
+[ERROR]     R extends ReportPageRow declared in class AbstractTable
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[250,20] error: cannot find symbol
+[ERROR]   symbol:   method setRow(R)
+[ERROR]   location: variable tableRow of type MutableTableRow<R>
+[ERROR]   where R is a type-variable:
+[ERROR]     R extends ReportPageRow declared in class AbstractTable
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[274,42] error: cannot infer type arguments for MutableTableRow<>
+[ERROR]   reason: cannot infer type-variable(s) T
+[ERROR]     (actual and formal argument lists differ in length)
+[ERROR]   where T is a type-variable:
+[ERROR]     T extends ReportPageRow declared in class MutableTableRow
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[276,49] error: cannot find symbol
+[ERROR]   symbol:   method getRow()
+[ERROR]   location: variable address of type TableCellAddress
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[277,20] error: cannot find symbol
+[ERROR]   symbol:   method setRow(R)
+[ERROR]   location: variable tableRow of type MutableTableRow<R>
+[ERROR]   where R is a type-variable:
+[ERROR]     R extends ReportPageRow declared in class AbstractTable
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[47,16] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[40] error: MutableTableRow is not abstract and does not override abstract method getTable() in TableRow
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[42,24] error: variable table not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[43,45] error: variable dao not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[139,47] error: unreported exception CloneNotSupportedException; must be caught or declared to be thrown
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[40] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/RelativePositionTableColumn.java:[27,30] error: variable column not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/RelativePositionTableColumn.java:[28,22] error: variable positionOffset not initialized in the default constructor
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/RelativePositionTableColumn.java:[26,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/DateTimeFormatParser.java:[62,26] error: cannot find symbol
+[ERROR]   symbol:   method of(boolean)
+[ERROR]   location: class TimePattern
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/DateTimeFormatParser.java:[78,26] error: cannot find symbol
+[ERROR]   symbol:   method of(boolean,char)
+[ERROR]   location: class DatePattern
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/DateTimeFormatParser.java:[90,43] error: cannot find symbol
+[ERROR]   symbol:   method isHasMillis()
+[ERROR]   location: variable timePattern of type TimePattern
+[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/DateTimeFormatParser.java:[100,30] error: cannot find symbol
+[ERROR]   symbol:   method of(boolean,DatePattern,TimePattern,char)
+[ERROR]   location: class DateTimePattern
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
