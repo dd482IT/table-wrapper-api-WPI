@@ -1,28 +1,3 @@
-[INFO] Scanning for projects...
-[INFO] 
-[INFO] ----------------< org.spacious-team:table-wrapper-api >-----------------
-[INFO] Building Table Wrapper API 2022.4
-[INFO]   from pom.xml
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] --- jacoco:0.8.8:prepare-agent (prepare-agent) @ table-wrapper-api ---
-[INFO] argLine set to -javaagent:/Users/daniel/.m2/repository/org/jacoco/org.jacoco.agent/0.8.8/org.jacoco.agent-0.8.8-runtime.jar=destfile=/Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/target/jacoco.exec
-[INFO] 
-[INFO] --- resources:3.3.0:resources (default-resources) @ table-wrapper-api ---
-[INFO] skip non existing resourceDirectory /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/resources
-[INFO] 
-[INFO] --- compiler:3.10.1:compile (default-compile) @ table-wrapper-api ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 34 source files to /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/target/classes
-[INFO] -------------------------------------------------------------
-[WARNING] COMPILATION WARNING : 
-[INFO] -------------------------------------------------------------
-[WARNING] [options] system modules path not set in conjunction with -source 11
-[INFO] 1 warning
-[INFO] -------------------------------------------------------------
-[INFO] -------------------------------------------------------------
-[ERROR] COMPILATION ERROR : 
-[INFO] -------------------------------------------------------------
 [ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ConstantPositionTableColumn.java:[29,22] error: variable columnIndex not initialized in the default constructor
 [ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ConstantPositionTableColumn.java:[28,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
 [ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/TableColumn.java:[21,7] error: [type.checking.not.run] NullnessChecker did not run because of a previous error issued by javac
