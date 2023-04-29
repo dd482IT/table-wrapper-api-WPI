@@ -1,0 +1,40 @@
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[172,48] [nullness:assignment] incompatible types in assignment.
+  found   : @Initialized @Nullable Object
+  required: @UnknownInitialization @NonNull Object
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[196,31] [nullness:conditional] incompatible types in conditional expression.
+  found   : null (NullType)
+  required: @Initialized @NonNull TableCell
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[196,49] [nullness:conditional] incompatible types in conditional expression.
+  found   : @Initialized @Nullable TableCell
+  required: @Initialized @NonNull TableCell
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[309,50] [nullness:assignment] incompatible types in assignment.
+  found   : @Initialized @Nullable Object
+  required: @UnknownInitialization @NonNull Object
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObject.java:[136,32] [nullness:conditional] incompatible types in conditional expression.
+  found   : null (NullType)
+  required: @Initialized @NonNull Object
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[155,25] [nullness:assignment] incompatible types in assignment.
+  found   : null (NullType)
+  required: T extends @UnknownInitialization @NonNull Object
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[45,21] [nullness:contracts.precondition.override] Subclass precondition is stronger for 'this.row' in getCell.
+    In superclass org.spacious_team.table_wrapper.api.ReportPageRow: no information
+    In subclass org.spacious_team.table_wrapper.api.MutableTableRow: @Nullable
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[46,15] [nullness:dereference.of.nullable] dereference of possibly-null reference row
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[51,15] [nullness:dereference.of.nullable] dereference of possibly-null reference row
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[56,15] [nullness:dereference.of.nullable] dereference of possibly-null reference row
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[61,15] [nullness:dereference.of.nullable] dereference of possibly-null reference row
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[66,15] [nullness:dereference.of.nullable] dereference of possibly-null reference row
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[71,15] [nullness:dereference.of.nullable] dereference of possibly-null reference row
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[115,60] [nullness:assignment] incompatible types in assignment.
+  found   : @Initialized @Nullable Integer
+  required: @UnknownInitialization @NonNull Integer
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[133,43] [keyfor:purity.not.sideeffectfree.call] call to side-effecting lombok.Lombok.sneakyThrow not allowed in side-effect-free method
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[133,43] [nullness:purity.not.sideeffectfree.call] call to side-effecting lombok.Lombok.sneakyThrow not allowed in side-effect-free method
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/DateTimeFormatParser.java:[36,26] [nullness:assignment] incompatible types in assignment.
+  found   : null (NullType)
+  required: @UnknownInitialization @NonNull Pattern
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableRow.java:[108,43] [keyfor:purity.not.sideeffectfree.call] call to side-effecting lombok.Lombok.sneakyThrow not allowed in side-effect-free method
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableRow.java:[108,43] [nullness:purity.not.sideeffectfree.call] call to side-effecting lombok.Lombok.sneakyThrow not allowed in side-effect-free method
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/PatternTableColumn.java:[59,107] [nullness:assignment] incompatible types in assignment.
+  found   : @Initialized @Nullable Object
+  required: @UnknownInitialization @NonNull Object
