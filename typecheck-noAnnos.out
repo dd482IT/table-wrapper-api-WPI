@@ -1,67 +1,33 @@
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObject.java:[136,32] error: [conditional] incompatible types in conditional expression.
-  found   : null (NullType)
-  required: @Initialized @NonNull Object
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableCell.java:[31,15] error: [return] incompatible types in return.
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[179,15] [return] incompatible types in return.
   type of expression: null (NullType)
   method return type: @Initialized @NonNull Object
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[179,15] error: [return] incompatible types in return.
-  type of expression: null (NullType)
-  method return type: @Initialized @NonNull Object
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[196,31] error: [conditional] incompatible types in conditional expression.
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[196,31] [conditional] incompatible types in conditional expression.
   found   : null (NullType)
   required: @Initialized @NonNull TableCell
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[155,25] error: [assignment] incompatible types in assignment.
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObject.java:[136,32] [conditional] incompatible types in conditional expression.
+  found   : null (NullType)
+  required: @Initialized @NonNull Object
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[155,25] [assignment] incompatible types in assignment.
   found   : null (NullType)
   required: T extends @UnknownInitialization @NonNull Object
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[249,15] error: [return] incompatible types in return.
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[249,15] [return] incompatible types in return.
   type of expression: null (NullType)
   method return type: @Initialized @NonNull MutableTableRow<R extends @Initialized @NonNull ReportPageRow>
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[115,60] error: [assignment] incompatible types in assignment.
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[115,60] [assignment] incompatible types in assignment.
   found   : @Initialized @Nullable Integer
   required: @UnknownInitialization @NonNull Integer
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/DateTimeFormatParser.java:[36,26] error: [assignment] incompatible types in assignment.
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/DateTimeFormatParser.java:[36,26] [assignment] incompatible types in assignment.
   found   : null (NullType)
   required: @UnknownInitialization @NonNull Pattern
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableRow.java:[35,15] error: [return] incompatible types in return.
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableRow.java:[35,15] [return] incompatible types in return.
   type of expression: null (NullType)
   method return type: @Initialized @NonNull TableCell
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableRow.java:[40,15] error: [return] incompatible types in return.
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableRow.java:[40,15] [return] incompatible types in return.
   type of expression: null (NullType)
   method return type: @Initialized @NonNull TableCell
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableRow.java:[65,15] error: [return] incompatible types in return.
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableRow.java:[65,15] [return] incompatible types in return.
   type of expression: null (NullType)
   method return type: @Initialized @NonNull Object
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile (default-compile) on project table-wrapper-api: Compilation failure: Compilation failure:
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObject.java:[136,32] error: [conditional] incompatible types in conditional expression.
-[ERROR]   found   : null (NullType)
-[ERROR]   required: @Initialized @NonNull Object
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableCell.java:[31,15] error: [return] incompatible types in return.
-[ERROR]   type of expression: null (NullType)
-[ERROR]   method return type: @Initialized @NonNull Object
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[179,15] error: [return] incompatible types in return.
-[ERROR]   type of expression: null (NullType)
-[ERROR]   method return type: @Initialized @NonNull Object
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:[196,31] error: [conditional] incompatible types in conditional expression.
-[ERROR]   found   : null (NullType)
-[ERROR]   required: @Initialized @NonNull TableCell
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[155,25] error: [assignment] incompatible types in assignment.
-[ERROR]   found   : null (NullType)
-[ERROR]   required: T extends @UnknownInitialization @NonNull Object
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:[249,15] error: [return] incompatible types in return.
-[ERROR]   type of expression: null (NullType)
-[ERROR]   method return type: @Initialized @NonNull MutableTableRow<R extends @Initialized @NonNull ReportPageRow>
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:[115,60] error: [assignment] incompatible types in assignment.
-[ERROR]   found   : @Initialized @Nullable Integer
-[ERROR]   required: @UnknownInitialization @NonNull Integer
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/DateTimeFormatParser.java:[36,26] error: [assignment] incompatible types in assignment.
-[ERROR]   found   : null (NullType)
-[ERROR]   required: @UnknownInitialization @NonNull Pattern
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableRow.java:[35,15] error: [return] incompatible types in return.
-[ERROR]   type of expression: null (NullType)
-[ERROR]   method return type: @Initialized @NonNull TableCell
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableRow.java:[40,15] error: [return] incompatible types in return.
-[ERROR]   type of expression: null (NullType)
-[ERROR]   method return type: @Initialized @NonNull TableCell
-[ERROR] /Users/daniel/Documents/njit/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableRow.java:[65,15] error: [return] incompatible types in return.
-[ERROR]   type of expression: null (NullType)
-[ERROR]   method return type: @Initialized @NonNull Object
+[WARNING] /Users/daniel/Documents/NJIT/WPI-Research/experiments-live/table-wrapper-api-WPI/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableCell.java:[31,15] [return] incompatible types in return.
+  type of expression: null (NullType)
+  method return type: @Initialized @NonNull Object
