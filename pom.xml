@@ -51,7 +51,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <lombok.version>1.18.24</lombok.version>
-        <checkerframework.version>3.33.1-SNAPSHOT</checkerframework.version>
+        <checkerframework.version>3.34.1-SNAPSHOT</checkerframework.version>
     </properties>
 
     <dependencies>
